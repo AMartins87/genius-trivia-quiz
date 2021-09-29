@@ -20,37 +20,58 @@
 
 <body>
 
-    <div class="quiz-container">
-        <div class="rules-container">
-            <div class="heading">
-                <span>How to play?</span>
+    <!-- Rules container -->
+    <!-- <div class="rules-container">
+        <div class="heading">
+            <span>How to play?</span>
+        </div>
+        <div class="rules-section">
+            <div class="rule">1. No 'googling' of the answers please. Let's be honest and try our best! <i
+                    class="far fa-smile-wink"></i></div>
+            <div class="rule">2. You can't change your mind. You can select an answer only once for each question.
             </div>
-            <div class="rules">
-                <div class="rule">1. No 'googling' of the answers please. Let's be honest and try our best! <i
-                        class="far fa-smile-wink"></i></div>
-                <div class="rule">2. You can't change your mind. You can select an answer only once for each question.
-                </div>
-                <div class="rule">3. We are no quitters! Therefore you have to finish the quiz once you start it. <i
-                        class="far fa-smile-beam"></i> </div>
-                <div class="rule">4. Have fun!</div>
-            </div>
-            <div id="question-box" class="hide">
-                <div id="question">Q</div>
-                <div id="options-section">
-                    <button class="btn">option1</button>
-                    <button class="btn">option2</button>
-                    <button class="btn">option3</button>
-                </div>
-            </div>
-            <div class="btns">
-                <button id="play-btn">Play</button>
-                <button id="next-btn">Next Question</button>
+            <div class="rule">3. We are no quitters! Therefore you have to finish the quiz once you start it. <i
+                    class="far fa-smile-beam"></i> </div>
+            <div class="rule">4. Have fun!</div>
+        </div>
+    </div> -->
+
+    <!-- Quiz container -->
+
+    <!-- <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
         </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div> -->
 
-        <!-- JavaScript link for running the quiz game-->
+    <div class="quiz-container">
+        <div id="question-box" class="hide">
+            <div id="question">Question here</div>
+            <div id="options-section" class="btn-grid">
+                <button class="btn">option1</button>
+                <button class="btn">option2</button>
+                <button class="btn">option3</button>
+            </div>
+        </div>
+        <div class="btns">
+            <button id="play-btn" class="play-btn btn">Play</button>
+            <button id="next-btn" class="play-btn btn hide">Next Question</button>
+        </div>
+    </div>
 
-        <script src="assets/js/script.js"></script>
+    <!-- JavaScript link for running the quiz game-->
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
