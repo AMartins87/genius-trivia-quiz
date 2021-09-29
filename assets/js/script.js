@@ -3,7 +3,7 @@
  * and using https://www.sitepoint.com/simple-javascript-quiz/
  */
 
- const startButton = document.getElementById('play-btn')
+const startButton = document.getElementById('play-btn')
 const nextButton = document.getElementById('next-btn')
 const questionBox = document.getElementById('question-box')
 const questionSection = document.getElementById('question')
@@ -16,7 +16,6 @@ startButton.addEventListener('click', startQuiz)
 
 
 function startQuiz() {
-    console.log('Quiz started')
     startButton.classList.add('hide')
     questionBox.classList.remove('hide')
     mixQuestions = questions.sort(() => Math.random() - .6) 
@@ -30,30 +29,60 @@ function nextQuestion() {
 }
 
 function resetConditions() {
-nextQuestion.classList.add('hide')
-while(optionButton.firstChild) {
-    optionButton.removeChild(optionButton.firstChild)
-}
+    resetMark(document.body)
+    nextQuestion.classList.add('hide')
+    while(optionButton.firstChild) {
+        optionButton.removeChild(optionButton.firstChild)
+    }
 }
 
 function showQuestion(question) {
     questionSection.innerHTML = question.question
-    question.options.forEach(options => {
+    question.options.forEach(option => {
         const button = document.createElement('button')
-        button.innerText = options.text
+        button.innerText = option.text
         button.classList.add('btn')
-        if (options.correct) {
-        button.dataset.correct = options.correct
+        if (option.correct) {
+            button.dataset.correct = option.correct
         }
-    button.addEventListener('click', selectOption)
-    optionButton.appendChild(button)
+        button.addEventListener('click', selectOption)
+        optionButton.appendChild(button)
     })
 }
 
-function selectOption(event) {
-    
-    }
+function selectOption(e) {
+    const clickedButton = e.target
+    const correct = clickedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(optionButton.children).forEach(button => {
+    setStatusClass(button, button.dataset.correct)
+  })
+  if (mixQuestions.length > currentQuestionIndex + 1) {
+    nextButton.classList.remove('hide')
+  } else {
+    startButton.innerText = 'Restart'
+    startButton.classList.remove('hide')
+  }
+}
+   
 
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+      element.classList.add('correct')
+    } else {
+      element.classList.add('incorrect')
+    }
+  }
+
+function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('incorrect')
+  }   
+
+function resetMark () {
+
+}
 
 let questions = [
 
