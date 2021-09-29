@@ -21,7 +21,7 @@ nextButton.addEventListener('click', () => {
 
 function startQuiz() {
     startButton.classList.add('hide')
-    mixQuestions = questions.sort(() => Math.random() - .5) 
+    mixQuestions = questions.sort(() => Math.random() - .13) 
     currentQuestionIndex = 0
     questionBox.classList.remove('hide')
     nextQuestion()
@@ -83,9 +83,9 @@ function clearStatusClass(element) {
     element.classList.remove('incorrect')
   }   
 
-function resetMark () {
+// function resetMark () {
 
-}
+// }
 
 let questions = [
 

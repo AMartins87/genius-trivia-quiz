@@ -7,6 +7,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
+    color: rgb(45, 3, 80);
+    font-family: 'IM Fell Double Pica SC', serif;
+    font-size: 4vh;
+    text-align: center;
 }
 
 .quiz-container {
@@ -15,6 +19,16 @@ body {
     background-color: white;
     border-radius: 10px;
     padding: 15px;
+    border: 5px solid rgb(45, 3, 80);
+}
+
+.heading {
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(71, 6, 124);
 }
 
 /* .rules-container  */
@@ -24,13 +38,27 @@ body {
     margin: 25px 0;
 }
 
+button {
+    font-family: serif;
+    font-size: 2vh;
+}
+
 .btn {
     padding: 10px 15px;
-    color: black;
+    color: rgb(45, 3, 80);
     outline: none;
     border-radius: 10px;
-    border: 1px solid black;
-    background-color: lightgray;
+    border: 2px solid rgb(45, 3, 80);
+    background-color: white;
+}
+
+button .btn {
+    font-size: 2vh;
+    /* font-family: serif; */
+}
+
+button #play-btn .play-btn.btn {
+    font-size: 2vh;
 }
 
 .btn-grid {
@@ -40,7 +68,12 @@ body {
 }
 
 .btn:hover {
-    background-color: lightpink;
+    background-color: rgb(45, 3, 80);
+    color: white;
+}
+
+.btns #play-btn{ 
+    font-family: serif;
 }
 
 .play-btn,
@@ -55,16 +88,17 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px 15px;
+    font-family: serif;
 }
 
 .btn.correct {
-    background-color: yellowgreen;
+    background-color: rgb(204, 231, 150);
     font-weight: bold;
     color: black;
 }
 
 .btn.incorrect {
-    background-color: crimson;
+    background-color: rgb(228, 121, 142);
     font-weight: bold;
 }
 
