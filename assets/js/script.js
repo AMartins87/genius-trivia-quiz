@@ -1,11 +1,13 @@
-/** This JS script was created using with the help from 
- * the walk through Love Maths project
+/** This JS script was created with the help from 
+ * the walk through Love Maths project 
+ * and using https://www.sitepoint.com/simple-javascript-quiz/
  */
 
-const startButton = document.getElementById('play-btn')
+ const startButton = document.getElementById('play-btn')
+const nextButton = document.getElementById('next-btn')
 const questionBox = document.getElementById('question-box')
 const questionSection = document.getElementById('question')
-const options = document.getElementById('options-section')
+const optionButton = document.getElementById('options-section')
 
 let mixQuestions
 let currentQuestionIndex
@@ -17,30 +19,41 @@ function startQuiz() {
     console.log('Quiz started')
     startButton.classList.add('hide')
     questionBox.classList.remove('hide')
-    mixQuestions = questions.sort(() => Math.random() - .6)
+    mixQuestions = questions.sort(() => Math.random() - .6) 
     currentQuestionIndex = 0
     nextQuestion()
 }
 
 function nextQuestion() {
     showQuestion(mixQuestions[currentQuestionIndex])
+    resetConditions()
+}
+
+function resetConditions() {
+nextQuestion.classList.add('hide')
+while(optionButton.firstChild) {
+    optionButton.removeChild(optionButton.firstChild)
+}
 }
 
 function showQuestion(question) {
     questionSection.innerHTML = question.question
-    const button = document.createElement('button')
-    button.innerText = options.text
-    button.classList.add('btn')
-    if (options.correct) {
-      button.dataset.correct = options.correct
-    }
+    question.options.forEach(options => {
+        const button = document.createElement('button')
+        button.innerText = options.text
+        button.classList.add('btn')
+        if (options.correct) {
+        button.dataset.correct = options.correct
+        }
     button.addEventListener('click', selectOption)
-    optionsButton.appendChild(button)
+    optionButton.appendChild(button)
+    })
 }
 
-function selectOption() {
+function selectOption(event) {
+    
+    }
 
-}
 
 let questions = [
 
