@@ -2,25 +2,40 @@
  * the walk through Love Maths project
  */
 
-const startButton = document.getElementById('play-btn');
-const questionBox = document.getElementById('question-box');
+const startButton = document.getElementById('play-btn')
+const questionBox = document.getElementById('question-box')
+const questionSection = document.getElementById('question')
+const options = document.getElementById('options-section')
 
-let mixQuestions;
-let currentQuestionIndex;
+let mixQuestions
+let currentQuestionIndex
 
-startButton.addEventListener('click', startQuiz);
+startButton.addEventListener('click', startQuiz)
+
 
 function startQuiz() {
-    console.log('Quiz started');
-    startButton.classList.add('hide');
-    questionBox.classList.remove('hide');
-    mixQuestions = questions.sort(() => Math.random() - 3);
-    currentQuestionIndex = 0;
-    nextQuestion();
+    console.log('Quiz started')
+    startButton.classList.add('hide')
+    questionBox.classList.remove('hide')
+    mixQuestions = questions.sort(() => Math.random() - .6)
+    currentQuestionIndex = 0
+    nextQuestion()
 }
 
 function nextQuestion() {
-    showQuestion = mixQuestions(currentQuestionIndex);
+    showQuestion(mixQuestions[currentQuestionIndex])
+}
+
+function showQuestion(question) {
+    questionSection.innerHTML = question.question
+    const button = document.createElement('button')
+    button.innerText = options.text
+    button.classList.add('btn')
+    if (options.correct) {
+      button.dataset.correct = options.correct
+    }
+    button.addEventListener('click', selectOption)
+    optionsButton.appendChild(button)
 }
 
 function selectOption() {
