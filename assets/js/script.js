@@ -13,27 +13,23 @@ let mixQuestions
 let currentQuestionIndex
 
 startButton.addEventListener('click', startQuiz)
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++
+    nextQuestion()
+  })
 
 
 function startQuiz() {
     startButton.classList.add('hide')
-    questionBox.classList.remove('hide')
-    mixQuestions = questions.sort(() => Math.random() - .6) 
+    mixQuestions = questions.sort(() => Math.random() - .5) 
     currentQuestionIndex = 0
+    questionBox.classList.remove('hide')
     nextQuestion()
 }
 
 function nextQuestion() {
-    showQuestion(mixQuestions[currentQuestionIndex])
     resetConditions()
-}
-
-function resetConditions() {
-    resetMark(document.body)
-    nextQuestion.classList.add('hide')
-    while(optionButton.firstChild) {
-        optionButton.removeChild(optionButton.firstChild)
-    }
+    showQuestion(mixQuestions[currentQuestionIndex])
 }
 
 function showQuestion(question) {
@@ -50,6 +46,14 @@ function showQuestion(question) {
     })
 }
 
+function resetConditions() {
+    // resetMark(document.body)
+    nextButton.classList.add('hide')
+    while(optionButton.firstChild) {
+        optionButton.removeChild(optionButton.firstChild)
+    }
+}
+
 function selectOption(e) {
     const clickedButton = e.target
     const correct = clickedButton.dataset.correct
@@ -59,13 +63,12 @@ function selectOption(e) {
   })
   if (mixQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
-  } else {
-    startButton.innerText = 'Restart'
+  }else{
+    startButton.innerText = 'Play Again!'
     startButton.classList.remove('hide')
   }
 }
    
-
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
