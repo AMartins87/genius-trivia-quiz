@@ -11,16 +11,23 @@ const optionButton = document.getElementById('options-section')
 
 let mixQuestions
 let currentQuestionIndex
+let hideRulesSection
 
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     nextQuestion()
-  })
+})
 
+function hideRules() {
+    hideRulesSection.click = () => {
+    hideRulesSection.classList.removeChild('rules-container')
+    }
+}
 
 function startQuiz() {
     startButton.classList.add('hide')
+
     mixQuestions = questions.sort(() => Math.random() - .13) 
     currentQuestionIndex = 0
     questionBox.classList.remove('hide')
@@ -64,7 +71,7 @@ function selectOption(e) {
   if (mixQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   }else{
-    startButton.innerText = 'Play Again!'
+    startButton.innerText = 'Play again!'
     startButton.classList.remove('hide')
   }
 }
@@ -82,10 +89,6 @@ function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('incorrect')
   }   
-
-// function resetMark () {
-
-// }
 
 let questions = [
 
