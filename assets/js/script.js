@@ -11,7 +11,6 @@ const optionButton = document.getElementById('options-section')
 
 let mixQuestions
 let currentQuestionIndex
-let hideRulesSection
 
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
@@ -19,10 +18,8 @@ nextButton.addEventListener('click', () => {
     nextQuestion()
 })
 
-function hideRules() {
-    hideRulesSection.click = () => {
-    hideRulesSection.classList.removeChild('rules-container')
-    }
+function hideRules() { 
+	document.getElementById("rules-container").style.display="none"; 
 }
 
 function startQuiz() {
