@@ -41,7 +41,7 @@ body {
 .rules-section {
     font-family: serif;
     font-size: 2.5vh;
-    padding: 5px;   
+    padding: 5px;
 }
 
 #question-box #question {
@@ -86,7 +86,7 @@ button .btn {
 }
 
 .btn:hover {
-    background-color:rgb(8, 13, 56);
+    background-color: rgb(8, 13, 56);
     color: white;
 }
 
@@ -117,4 +117,15 @@ button .btn {
 
 .hide {
     display: none;
+}
+
+footer {
+    display: inline-grid;
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    font-size: 2vh;
+    color: white;
 }
