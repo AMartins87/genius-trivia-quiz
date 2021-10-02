@@ -82,7 +82,7 @@ I tested the website in Chrome and Microsoft Edge on my desktop PC with widescre
 ### **VALIDATOR TESTING**
 
 -   **HTML** (No errors were returned when passing through the official W3C validator 
-    -   [Home page](https://validator.w3.org/nu/?doc=https%3A%2F%2Famartins87.github.io%2Fworld-of-makaton%2Findex.html)
+    -   [Home page](assets/wireframes/W3C_HTML_Validator_Results.JPG)
 
 -   **CSS** (No errors were found when passing through the official Jigsaw validator
     

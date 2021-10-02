@@ -1,6 +1,6 @@
 /** This JS script was created with the help from 
  * the walk through Love Maths project 
- * and using tutorials on https://www.sitepoint.com/simple-javascript-quiz/
+ * and using https://www.sitepoint.com/simple-javascript-quiz/
  */
 
  const startButton = document.getElementById('play-btn');
@@ -16,7 +16,7 @@
  nextButton.addEventListener('click', () => {
      currentQuestionIndex++;
      nextQuestion();
- });
+ })
  
  function hideRules() { 
      document.getElementById("rules-container").style.display="none"; 
@@ -25,9 +25,9 @@
  function startQuiz() {
      startButton.classList.add('hide');
  
-     mixQuestions = questions.sort(() => Math.random() - .13) ;
-     currentQuestionIndex = 0;
-     questionBox.classList.remove('hide');
+     mixQuestions = questions.sort(() => Math.random() - .13),
+     currentQuestionIndex = 0,
+     questionBox.classList.remove('hide'),
      nextQuestion();
  }
  
@@ -51,6 +51,7 @@
  }
  
  function resetConditions() {
+     // resetMark(document.body)
      nextButton.classList.add('hide');
      while(optionButton.firstChild) {
          optionButton.removeChild(optionButton.firstChild);
@@ -84,9 +85,7 @@
  function clearStatusClass(element) {
      element.classList.remove('correct');
      element.classList.remove('incorrect');
-   } 
-   
-// Questions 
+   }   
  
  let questions = [
  
@@ -180,4 +179,3 @@
              ]
      },
  ];
- 
