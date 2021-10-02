@@ -107,19 +107,17 @@ The [Sign Up page](https://8000-violet-platypus-kcwu1u8i.ws-eu13.gitpod.io/sign_
 ### **ACCESSIBILITY**
 
 I checked that the chosen colors and fonts are easy to read. All pages have passed through  the Lighthouse reporting tool in Chrome developer tools on both mobile and desktop.
-- [Contrast checker - body text](assets/wireframes/accessibility/Contrast_checker_body.PNG)
+- [Contrast checker - body text](assets/wireframes/accessibility/Body_text_contrast_checker.JPG)
 - [Contrast checker - header text](assets/wireframes/accessibility/Contrast_checker_header.PNG)
-- [Contrast checker - active class and hover selector](assets/wireframes/accessibility/Contrast_checker_active.PNG)
+- [ Contrast checker - correct class](assets/wireframes/accessibility/Correct_class_contrast_checker.JPG)
+- [ Contrast checker - incorrect class](assets/wireframes/accessibility/Incorrect_class_contrast_checker.JPG)
+- [Contrast checker - active class and hover selector](assets/wireframes/accessibility/Hover_selector_contrast_checker.JPG)
 ***
-- [Lighthouse report - Home page - mobile](assets/wireframes/accessibility/Lighthouse_mobile_report_home.PNG)
-- [Lighthouse report - About page - mobile](assets/wireframes/accessibility/Lighthouse_mobile_report_about.JPG)
-- [Lighthouse report - Abc page - mobile](assets/wireframes/accessibility/Lighthouse_mobile_report_abc.JPG)
-- [Lighthouse report - Sign Up page - mobile](assets/wireframes/accessibility/Lighthouse_mobile_report_signup.PNG)
+- [Lighthouse report - mobile](assets/wireframes/accessibility/Lighthouse_mobile_report.JPG)
+
 ***
-- [Lighthouse report - Home page - desktop](assets/wireframes/accessibility/Lighthouse_desktop_report_home.PNG)
-- [Lighthouse report - About page - desktop](assets/wireframes/accessibility/Lighthouse_desktop_report_about.JPG)
-- [Lighthouse report - Abc page - desktop](assets/wireframes/accessibility/Lighthouse_desktop_report_abc.PNG)
-- [Lighthouse report - Sign Up page - desktop](assets/wireframes/accessibility/Lighthouse_desktop_report_signup.PNG)
+- [Lighthouse report - desktop](assets/wireframes/accessibility/Lighthouse_desktop_report.JPG)
+
 
 
 ## **BUGS**

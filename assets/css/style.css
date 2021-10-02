@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
-    background-image: url(/assets/images/pexels-felix-mittermeier-956999.jpg);
+    background-image: url(/assets/images/background.jpg);
     background-size: cover;
     color: rgb(8, 13, 56);
     font-family: 'IM Fell Double Pica SC', serif;
@@ -98,7 +98,7 @@ button .btn {
     text-transform: uppercase;
 }
 
-/* Button actions/functions */
+/* Button's actions & functions */
 .btn:hover {
     background-color: rgb(8, 13, 56);
     color: white;
