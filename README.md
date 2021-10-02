@@ -12,55 +12,21 @@ I kept the site simple containing only a background image with a back up backgro
 
 ## **FEATURES**
 
-- ### **NAVIGATION**
-    - Navigation links are on top of each page on every screen size to take the user to a different page of the website.
-          - It allows the user to easily navigate from page to page across all devices as the navbar is in a fixed position, so it stays put if you scroll through any page.
-    - Sections of the navigation bar are: Home, About, ABC, and Sign Up.
-        - Each page has a title:
-            -   Home page - World of Makaton
-            -   About - About Makaton
-            -   ABC - ABC ... Alphabet
-            -   Sign Up - Sign Up
-    - Fonts and colors compliment the overall look of the website and are consistent throughout.
-    - Active page will be highlighted in crimson color. The same color was used for a hover function. 
+- ### **START GAME PAGE IMAGE**
+    - The main page a box with rules of game and a play button. 
 
-![Navigation bar image](assets/wireframes/navbar.PNG)
-
-- ### **HOME PAGE IMAGE**
-    - The header shows the name of the website, using a chosen color of purple shade (#894ac5). 
-    - The header's tagline gives the user clear information about the website's topic.
-
-![Home page image](assets/wireframes/home_image.JPG)
+![Home page image](assets/wireframes/wireframe_game.JPG)
 
 - ### **FOOTER**
-    - Contains social media links leading to Facebook, Twitter, and YouTube and a link to an email in form of icons at the bottom of each page. The links will open in a new tab to allow easy navigation and avoid using the 'back' button to return to the page. The email link will open the user's choice of email software, i.e. desktop mail app/Outlook.
-    - It also contains copyright information, including a year of creation and my name.
+    - Contains copyright information, including a year of creation and my name.
 
-![Footer image](assets/wireframes/footer.PNG)
+![Footer image](assets/wireframes/wireframe_footer.JPG)
 
-- ### **ABOUT PAGE**
-    - This section gives a user information about what Makaton (topic of the website) is, how it is used, and the best tips on how to start learning it.
-    - Image shows the character of Mr Tumbles from CBeebies shows 'Something Special' to which I included an external link for users to click on and be redirected into a new window.
+- ### **QUIZ PAGE**
+    - 
 
 ![About page image](assets/wireframes/about_page_nv.JPG)
 
-- ### **ABC PAGE**
-    - This page contains images of the Makaton finger alphabet. Every single picture has a thin border to separate each image from each other and again allow a better user experience on all screen sizes. 
-
-![ABC page image](assets/wireframes/abc_page.PNG)
-
-
-- ### **SIGN UP PAGE**
-    - Sign up page has a form to collect user's details if they would like to receive news & updates
-    - Form collects name, email, and selection of newsletter type the user would like to receive
-    - Users will be able to choose if they would like to get email updates and video tutorials, information about any running workshops, or they can select to subscribe to all.
-
-![Sign Up page image](assets/wireframes/sign_up_page.PNG)
-   
-- ### **THANK YOU PAGE:**
-    - After the user fills in the sign up form and clicks on 'Send' button, it will take the user to a page with a confirmation of their successful registration.     
-
-![Thank You page image](assets/wireframes/thank_you_page.PNG)
 
 ## **FUTURE DEVELOPMENT**
 
