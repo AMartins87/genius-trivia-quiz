@@ -15,7 +15,7 @@ I kept the site simple containing only a background image with a back up backgro
 - ### **START GAME PAGE IMAGE**
     - The main page a box with rules of game and a play button. 
 
-![Home page image](assets/wireframes/wireframe_game.JPG)
+![Home page image](assets/wireframes/wireframe_main_page.JPG)
 
 - ### **FOOTER**
     - Contains copyright information, including a year of creation and my name.
