@@ -1,6 +1,6 @@
 # **GENIUS TRIVIA QUIZ**
 
-You can see the live site [here](https://amartins87.github.io/world-of-makaton/).
+You can see the live site [here](https://amartins87.github.io/Genius_Trivia_Quiz/).
 
 The purpose of the World of Makaton website is to introduce more people to this wonderful and easy to learn sign language which supports children and adults who have learning difficulties and/or delays, to communicate better.
 
@@ -81,23 +81,10 @@ I tested every page on iPad and iPhone 8, and I asked my friends and family to t
 
 I tested the website in Chrome and Microsoft Edge on my desktop PC with widescreen (screen resolution of 1920px by 1080px), and tested it on a laptop in Chrome, Mozilla, and Microsoft Edge. The site is responsive, looks good, content is readable on all standard screen sizes and all external links open in a new window. 
 
-
-The [Home page](https://amartins87.github.io/world-of-makaton/index.html) showcases a cover text area which explains the subject of the website, the menu on top of the page will take you to other sections of the website. Footer has incorporated icons with links to external social media sites which will open in a new window. The mail icon will open a preferred mail application on user's device or if not set, it will ask which application should be used. Email recipient is preset with the following email address: aneta.martins@outlook.com and subject line containing 'Makaton enquiry'.
-
-The [About page](https://amartins87.github.io/world-of-makaton/about.html) explains briefly what is the subject of the website in paragraphs, shows an image of a character from a TV programme which I recommend to watch and shows an ordered list with more information. 
-
-The [ABC page](https://8000-violet-platypus-kcwu1u8i.ws-eu13.gitpod.io/abc.html) has only images of the alphabet and a subheading which tells the user what the images are for. 
-
-The [Sign Up page](https://8000-violet-platypus-kcwu1u8i.ws-eu13.gitpod.io/sign_up.html) contains a sign up form where a user has to write in their name, email and select an option of what materials they'd like to receive. All fields are required and won't allow submission without entries in a correct format like an email addresses has to have certain characters to pass.Once the user clicks on the 'Send' button, it will take the user to a page with a confirmation of their successful registration. Navbar is included on this page for an easy return to the website. 
-
-
 ### **VALIDATOR TESTING**
 
 -   **HTML** (No errors were returned when passing through the official W3C validator 
     -   [Home page](https://validator.w3.org/nu/?doc=https%3A%2F%2Famartins87.github.io%2Fworld-of-makaton%2Findex.html)
-    -   [About page](https://validator.w3.org/nu/?doc=https%3A%2F%2Famartins87.github.io%2Fworld-of-makaton%2Fabout.html)
-    -   [Abc page](https://validator.w3.org/nu/?doc=https%3A%2F%2Famartins87.github.io%2Fworld-of-makaton%2Fabc.html) - yellow warning - details in [**Unfixed Bugs**](#unfixed-bugs)
-    -   [Sign Up page](https://validator.w3.org/nu/?doc=https%3A%2F%2Famartins87.github.io%2Fworld-of-makaton%2Fsign_up.html)
 
 -   **CSS** (No errors were found when passing through the official Jigsaw validator
     
