@@ -2,13 +2,11 @@
 
 You can see the live site [here](https://amartins87.github.io/Genius_Trivia_Quiz/).
 
-The purpose of the World of Makaton website is to introduce more people to this wonderful and easy to learn sign language which supports children and adults who have learning difficulties and/or delays, to communicate better.
+The purpose of Genius Trivia Quiz is to test user's general knowledge through a variety of questions. 
 
-I wanted to keep the site concise and easy to navigate through as there are multiple pages out there that are good as they contain lots of information about the subject, but they are not very easy to navigate through and lots of important pieces of information are scattered over several pages.
+I kept the site simple containing only a background image with a back up background color of black in case the image doesn't load up for a good contrast. 
 
-World of Makaton gives the user a taster of this form of communication and it gives an external pointer to a TV programme which I'd highly recommend as it will help with learning sign language in form of fun and play. 
-
-![Mock up image](assets/wireframes/mockup.JPG)
+![Mock up image](assets/wireframes/Mock_up_MS2.JPG)
 
 *Please press **Ctrl** in Windows or **Command** on Mac button and click for any links which you would like to open in a new tab when in the README.md file*
 
