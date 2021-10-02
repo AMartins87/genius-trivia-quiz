@@ -37,13 +37,13 @@ Also, I would like to set up a proper collection site to receive subscribers' da
 
 As you can see in my [wireframes](assets/wireframes/Makaton_wireframe_all.png), the layout was originally planned slightly differently, including the position and display of a navbar. 
 
-To improve user's experience and ease of navigation on smaller screens, I changed the navbar to be in a fixed position top of the page on every screen which then eliminated problems on mobile phone touchscreens as the padding area increased with this change and users are able to press the page links without any issues. 
+I kept the styling of the game to a minimum to make it accessible and easy to navigate through on every device. 
 
 I tested every page in Chrome Developer Tools using responsive design as well as all of the available device types listed. 
 
-I tested every page on iPad and iPhone 8, and I asked my friends and family to test the site on their mobile devices (Huawei, Xiaomi Redmi, and Samsung). They confirmed functionality of all pages and links, and they understood the objective of the website.
+I tested every page on iPad and iPhone 8, and I asked my friends and family to test the site on their mobile devices (Huawei, Xiaomi Redmi, and Samsung). They confirmed the quiz functioned well on their devices.
 
-I tested the website in Chrome and Microsoft Edge on my desktop PC with widescreen (screen resolution of 1920px by 1080px), and tested it on a laptop in Chrome, Mozilla, and Microsoft Edge. The site is responsive, looks good, content is readable on all standard screen sizes and all external links open in a new window. 
+I tested the website in Chrome and Microsoft Edge on my desktop PC with widescreen (screen resolution of 1920px by 1080px), and tested it on a laptop in Chrome, Mozilla, and Microsoft Edge. The site is responsive, looks good, content is readable on all standard screen sizes and I found it easy to click on all buttons. 
 
 ### **VALIDATOR TESTING**
 
@@ -72,18 +72,11 @@ I checked that the chosen colors and fonts are easy to read. All pages have pass
 
 ## **BUGS**
 
--   Right at the beginning, my page wasn't loading none of the style changes. I realized I forgot to link the style.css file with the index.html file. Once I linked it, all was fixed.
-
--   When I ran the code through a validator, an error popped up on my sign_up.html page in my '.form-section'. I have had set the target="_blanket" and it had strangely worked - a new page opened up in a new window. The correct value is target="_blank". However the target value was taken out as there is no need for an internal link to open in a new tab or window. 
-
-- Got an error on my Lighthouse report about my external links in a footer and 'About' page, stating the links to cross-origin destinations are unsafe. The error was resolved by adding rel="noreferrer".
-
-- When I ran the lighthouse report for final check, the Performance category has changed its score several times, ranging from 83 to 98 even though I didn't change or add html or css code. I feel like this had to be highlighted.
+-   
 
 ## **UNFIXED BUGS**
 
 -   
-
 
 ## **DEPLOYMENT**
 
