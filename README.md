@@ -101,23 +101,21 @@ The [Sign Up page](https://8000-violet-platypus-kcwu1u8i.ws-eu13.gitpod.io/sign_
 
 -   **CSS** (No errors were found when passing through the official Jigsaw validator
     
-    ![Jigsaw Validator](assets/wireframes/W3C_CSS_validator.PNG)s
+    ![Jigsaw Validator](assets/wireframes/W3C_CSS_Validator_Results.JPG)
 
 
 ### **ACCESSIBILITY**
 
 I checked that the chosen colors and fonts are easy to read. All pages have passed through  the Lighthouse reporting tool in Chrome developer tools on both mobile and desktop.
-- [Contrast checker - body text](assets/wireframes/accessibility/Body_text_contrast_checker.JPG)
-- [Contrast checker - header text](assets/wireframes/accessibility/Contrast_checker_header.PNG)
-- [ Contrast checker - correct class](assets/wireframes/accessibility/Correct_class_contrast_checker.JPG)
-- [ Contrast checker - incorrect class](assets/wireframes/accessibility/Incorrect_class_contrast_checker.JPG)
+- [Contrast checker - body and header text](assets/wireframes/accessibility/Body_text_contrast_checker.JPG)
+- [Contrast checker - correct class](assets/wireframes/accessibility/Correct_class_contrast_checker.JPG)
+- [Contrast checker - incorrect class](assets/wireframes/accessibility/Incorrect_class_contrast_checker.JPG)
 - [Contrast checker - active class and hover selector](assets/wireframes/accessibility/Hover_selector_contrast_checker.JPG)
 ***
 - [Lighthouse report - mobile](assets/wireframes/accessibility/Lighthouse_mobile_report.JPG)
 
 ***
 - [Lighthouse report - desktop](assets/wireframes/accessibility/Lighthouse_desktop_report.JPG)
-
 
 
 ## **BUGS**
