@@ -25,13 +25,14 @@ I kept the site simple containing only a background image with a back up backgro
 - ### **QUIZ PAGE**
     - 
 
-![About page image](assets/wireframes/about_page_nv.JPG)
+![Quiz game page](assets/wireframes/wireframe_game.JPG)
+![Quiz game page with correct answer](assets/wireframes/wireframe_game_correct.JPG)
+![Quiz game page with incorrect answer](assets/wireframes/wireframe_game_incorrect.JPG)
 
 
 ## **FUTURE DEVELOPMENT**
 
-I would like to add a thin side-bar on mobile devices and screens with width of 577px and down on the ABC page with links to each of the letters for easier navigation. 
-Also, I would like to set up a proper collection site to receive subscribers' data once I learn how to do it. It will allow me to distribute all relevant information as per their sign up entries. 
+I would like to add pop up modals with interesting facts about the correct answers. Also I would like to add a question counter and a timer. 
 
 ## **TESTING**
 
