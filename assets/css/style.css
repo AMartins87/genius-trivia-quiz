@@ -103,6 +103,10 @@ button .btn {
     background-color: rgb(8, 13, 56);
     color: white;
 }
+button .btn:active {
+    color: white;
+    background-color: orange;
+}
 
 .btn.correct {
     background-color: rgb(204, 231, 150);

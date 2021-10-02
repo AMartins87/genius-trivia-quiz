@@ -23,10 +23,21 @@ I kept the site simple containing only a background image with a back up backgro
 ![Footer image](assets/wireframes/wireframe_footer.JPG)
 
 - ### **QUIZ PAGE**
-    - 
+    - Shows a questions with three possible options on display
+    - Next Questions button is not visible before you select your answer
 
 ![Quiz game page](assets/wireframes/wireframe_game.JPG)
+
+    - When user hovers over the options, the buttons will change their background color to a shade of dark blue color and text will become bold white. 
+
+![Hover function](assets/wireframes/wireframe_game_hover.JPG)
+
+    - If correct answer is selected, the background of the button will turn light green.
+
 ![Quiz game page with correct answer](assets/wireframes/wireframe_game_correct.JPG)
+
+- If incorrect answer is selected, the background of the button will turn light red.
+
 ![Quiz game page with incorrect answer](assets/wireframes/wireframe_game_incorrect.JPG)
 
 
