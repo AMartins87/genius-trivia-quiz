@@ -48,7 +48,7 @@ I tested the website in Chrome and Microsoft Edge on my desktop PC with widescre
 ### **VALIDATOR TESTING**
 
 -   **HTML** (No errors were returned when passing through the official W3C validator 
-    -   [Home page](assets/wireframes/W3C_HTML_Validator_Results.JPG)
+    ![W3C Validator](assets/wireframes/W3C_HTML_Validator_Results.JPG)
 
 -   **CSS** (No errors were found when passing through the official Jigsaw validator
     
@@ -62,6 +62,7 @@ I checked that the chosen colors and fonts are easy to read. All pages have pass
 - [Contrast checker - correct class](assets/wireframes/accessibility/Correct_class_contrast_checker.JPG)
 - [Contrast checker - incorrect class](assets/wireframes/accessibility/Incorrect_class_contrast_checker.JPG)
 - [Contrast checker - active class and hover selector](assets/wireframes/accessibility/Hover_selector_contrast_checker.JPG)
+
 ***
 - [Lighthouse report - mobile](assets/wireframes/accessibility/Lighthouse_mobile_report.JPG)
 
@@ -75,17 +76,13 @@ I checked that the chosen colors and fonts are easy to read. All pages have pass
 
 -   When I ran the code through a validator, an error popped up on my sign_up.html page in my '.form-section'. I have had set the target="_blanket" and it had strangely worked - a new page opened up in a new window. The correct value is target="_blank". However the target value was taken out as there is no need for an internal link to open in a new tab or window. 
 
-- When I resized images with TinyJPG, the Lighthouse report came back with low Best Practices, so I reverted to old sizes. All images uploaded well apart from a letter F. I deleted and uploaded the image again and retyped the link path to a letter F and the issue got fixed. 
-
-    ![Letter F](assets/wireframes/letter_f_error.JPG)
-
 - Got an error on my Lighthouse report about my external links in a footer and 'About' page, stating the links to cross-origin destinations are unsafe. The error was resolved by adding rel="noreferrer".
 
 - When I ran the lighthouse report for final check, the Performance category has changed its score several times, ranging from 83 to 98 even though I didn't change or add html or css code. I feel like this had to be highlighted.
 
 ## **UNFIXED BUGS**
 
--   Yellow warning showed up on the ABC page due to the whole page section not having a heading element. There is no need to use a heading element within the section as the page contains only images of the finger alphabet. 
+-   
 
 
 ## **DEPLOYMENT**
@@ -94,29 +91,19 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 1.  In the GitHub repository, navigate to the **Settings** tab, then **Pages** section
 2.  From the **Source** section drop-down menu, select the **Branch:main**
 3.  Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-4.  Now this site is live and published on https://amartins87.github.io/world-of-makaton/.
+4.  Now this site is live and published on https://amartins87.github.io/Genius_Trivia_Quiz/.
 
 
 ## **CREDITS**
 
 - **CONTENT**
-    - My main point of reference for the written content was [Makaton website](https://makaton.org) to double-check that I wasn't going to write incorrect data and information.  
+    - My source for questions and correct answers was [Best Life](https://bestlifeonline.com/genius-trivia-questions/).
 
     - The icons in the footer and a sign up form were taken from [Font Awesome](https://fontawesome.com/)
 
 - **CODE**
-    - I searched on [W3Schools](https://www.w3schools.com) when I looked for the best way to incorporate images on About and Alphabet pages. Even though I didn't use any of the code in my final version, I have learnt a great deal from trying out new ways of displaying images like a responsive grid layout. 
-
-    - Code for the form page was taken from the Love Running project and only minor changes were made, like a change of font, image position, height, color scheme, and adding a code for cursor.
-
-    - The select option code was advised to use by my mentor Maria Hynes as I couldn't implement a 'required' attribute to my previous checkbox option without using a javascript. 
+   
 
 - **MEDIA**
 
-    - Home page image was obtained via [Shutterstock](https://www.shutterstock.com/image-photo/brother-sister-learn-sign-language-home-450847297). 
-    - About page image was obtained via official [Something Special magazine Twitter account](https://twitter.com/MyMrTumbleMag/status/980490147996360705?s=20). 
-    - Abc page images were obtained via [Makaton website](https://makaton.org/TMC/Free_resources_.aspx) in their library which contains free resources for anyone who creates an account with the organization's website.
-    - Sign Up page image inspiration came from our local children's centre where they have hanged images of kids' handprints in rainbow colors. The image was obtained via [Clip Art Best website](http://www.clipartbest.com/clipart-9i4ogx4GT) which are free to download and use in my designs. 
-    - Image on the hidden Thank You page was obtained via [Makaton website](https://makaton.org/TMC/Free_resources_.aspx) from their library of free resources.
-
-*This project is for educational purposes only.*
+    - Background image was sourced from Pexels and it belongs to [Felix Mittermeier](https://www.pexels.com/photo/galaxy-1146134/).
