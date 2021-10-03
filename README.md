@@ -1,10 +1,8 @@
 # **GENIUS TRIVIA QUIZ**
 
-You can see the live site [here](https://amartins87.github.io/Genius_Trivia_Quiz/).
+You can see the live site [here](https://amartins87.github.io/genius-trivia-quiz/).
 
-The purpose of Genius Trivia Quiz is to test user's general knowledge through a variety of questions. 
-
-I kept the site simple containing only a background image with a back up background color of black in case the image doesn't load up for a good contrast. 
+The purpose of Genius Trivia Quiz is to test user's advanced general knowledge through a variety of questions. 
 
 ![Mock up image](assets/wireframes/Mock_up_MS2.JPG)
 
@@ -43,19 +41,17 @@ I kept the site simple containing only a background image with a back up backgro
 
 ## **FUTURE DEVELOPMENT**
 
-I would like to add pop up modals with interesting facts about the correct answers. Also I would like to add a question counter and a timer. 
+I would like to add pop up modals with interesting facts about the correct answers. I would also like to add a question counter and a timer. 
 
 ## **TESTING**
 
 As you can see in my [wireframes](assets/wireframes/Makaton_wireframe_all.png), the layout was originally planned slightly differently, including the position and display of a navbar. 
 
-I kept the styling of the game to a minimum to make it accessible and easy to navigate through on every device. 
+I kept the styling of the game to a minimum to make it accessible and easy to navigate through on every device. I set a simple background image with a back up background color of black in case the image doesn't load up for a good contrast. 
 
 I tested every page in Chrome Developer Tools using responsive design as well as all of the available device types listed. 
 
-I tested every page on iPad and iPhone 8, and I asked my friends and family to test the site on their mobile devices (Huawei, Xiaomi Redmi, and Samsung). They confirmed the quiz functioned well on their devices.
-
-I tested the website in Chrome and Microsoft Edge on my desktop PC with widescreen (screen resolution of 1920px by 1080px), and tested it on a laptop in Chrome, Mozilla, and Microsoft Edge. The site is responsive, looks good, content is readable on all standard screen sizes and I found it easy to click on all buttons. 
+I tested the quiz on iPad and iPhone 8, in Chrome and Microsoft Edge on my desktop PC with screen resolution of 1920px by 1080px, and I tested it on a laptop in Chrome, Mozilla, and Microsoft Edge. The site is responsive, looks good, content is readable on all standard screen sizes and I found it easy to click on all buttons. 
 
 ### **VALIDATOR TESTING**
 
