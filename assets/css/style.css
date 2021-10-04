@@ -107,11 +107,9 @@ button .btn {
 }
 
 .selection {
-    border-style: dashed;
-}
-
-.btn .selection {
-    border-color: black;
+    border-style: outset;
+    font-style: italic;
+    border: 5px solid;
 }
 
 .btn.correct {
