@@ -106,6 +106,14 @@ button .btn {
     font-weight: 100;
 }
 
+.selection {
+    border-style: dashed;
+}
+
+.btn .selection {
+    border-color: black;
+}
+
 .btn.correct {
     background-color: rgb(204, 231, 150);
     border-color: rgb(11, 97, 25);
