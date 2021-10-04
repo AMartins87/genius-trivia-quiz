@@ -11,7 +11,7 @@ The purpose of Genius Trivia Quiz is to test user's advanced general knowledge t
 ## **FEATURES**
 
 - ### **START GAME PAGE IMAGE**
-    - The main page has a box with rules of the game and a play button. 
+    - The main page has a box with rules of the game and a play button which will turn dark blue with text to bold white when you hover over it.
 
 ![Home page image](assets/wireframes/wireframe_main_page.JPG)
 
@@ -34,11 +34,12 @@ The purpose of Genius Trivia Quiz is to test user's advanced general knowledge t
 
 - ### **QUIZ PAGE - CORRECT/INCORRECT OPTION**
     - When an answer is selected, the background of the buttons will turn light green/light red according to being correct/incorrect.
+    - Next Question button will appear and again it will turn dark blue with text to bold white when you hover over it.
 
 ![Quiz game page with correct/incorrect answer](assets/wireframes/wireframe_game_correct_incorrect.JPG)
 
 - ### **QUIZ PAGE - END SCREEN**
-    - The screen shows the text 'Finished!' and 'Play Again' button.
+    - The screen shows the text 'Finished!' and 'Play Again' button which will turn dark blue with text to bold white when you hover over it.
 
 ![End of game page](assets/wireframes/wireframe_end_screen_w_hover.JPG)
 
@@ -48,22 +49,27 @@ I would like to add pop-up modals with interesting facts about the correct answe
 
 ## **TESTING**
 
-Here is my [Balsamiq wireframes](assets/wireframes/Balsamiq_wireframe.JPG). 
+Here are my [Balsamiq wireframes](assets/wireframes/Balsamiq_wireframe.JPG). 
 
-I kept the styling of the game to a minimum to make it accessible and easy to navigate through on every device. I set a simple background image with a backup background color of black for a good contrast in case the image doesn't load up.
+I kept the styling of the quiz to a minimum to make it accessible and easy to navigate through on every device without the need for media queries. I set a simple background image with a backup background color of black for a good contrast in case the image doesn't load up.
 
-I tested the game in Chrome Developer Tools using responsive design as well as all of the available device types listed. 
+I tested the uiz in Chrome Developer Tools using responsive design as well as all of the available device types listed. 
 
-I tested the quiz on iPad and iPhone 8, in Chrome and Microsoft Edge on my desktop PC with a screen resolution of 1920px by 1080px, and I tested it on a laptop in Chrome, Mozilla, and Microsoft Edge. The site is responsive, looks good, content is readable on all standard screen sizes and I found it easy to click on all buttons. 
+I tested the quiz on an iPad and iPhone 8, in Chrome and Microsoft Edge on my desktop PC with a screen resolution of 1920px by 1080px. I also tested the quiz on a laptop in Chrome, Mozilla, and Microsoft Edge. The site is responsive, looks good, content is readable on all standard screen sizes and I found it easy to click on all buttons after the padding got increased.
 
 ### **VALIDATOR TESTING**
 
--   **HTML** (No errors were returned when passing through the official W3C validator 
+-   **HTML** (No errors were returned when passing through the official W3C validator) 
     ![W3C Validator](assets/wireframes/W3C_HTML_Validator_Results.JPG)
 
--   **CSS** (No errors were found when passing through the official Jigsaw validator
+-   **CSS** (No errors were found when passing through the official Jigsaw validator)
     
     ![Jigsaw Validator](assets/wireframes/Jigsaw_CSS_Validator_Results.JPG)
+
+-   **JSHINT** (17 warnings and 1 unused variable found)
+    
+    ![JShint Tool](assets/wireframes/JShint_report.JPG)
+
 
 
 ### **ACCESSIBILITY**
