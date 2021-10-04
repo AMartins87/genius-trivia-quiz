@@ -8,7 +8,8 @@
  const questionBox = document.getElementById('question-box');
  const questionSection = document.getElementById('question');
  const optionButton = document.getElementById('options-section');
- 
+ const resultsContainer = document.getElementById('results-container');
+
  let mixQuestions;
  let currentQuestionIndex;
  
@@ -66,9 +67,13 @@
      });
      if (mixQuestions.length > currentQuestionIndex + 1) {
          nextButton.classList.remove('hide');
+        
      } else {
          startButton.innerText = 'Play again!';
          startButton.classList.remove('hide');
+         questionBox.classList.add('hide');
+         resultsContainer.classList.remove('hide');
+         
      }
  }
  

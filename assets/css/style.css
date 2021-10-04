@@ -99,7 +99,7 @@ button .btn {
     text-transform: uppercase;
 }
 
-/* Button's actions & functions */
+/* Buttons for actions & functions */
 .btn:hover {
     background-color: rgb(8, 13, 56);
     color: white;
@@ -122,6 +122,16 @@ button .btn {
 
 .hide {
     display: none;
+}
+
+/* Results container */ 
+
+#results-container {
+    padding: 25px;
+}
+
+#results-container i {
+    padding: 10px;
 }
 
 /* Footer */
