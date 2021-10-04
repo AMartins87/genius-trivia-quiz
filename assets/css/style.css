@@ -117,7 +117,7 @@ button .btn {
     background-color: rgb(228, 121, 142);
     border-color: crimson;
     font-weight: bold;
-    color: darkred;
+    color: rgb(61, 3, 3);
 }
 
 .hide {
