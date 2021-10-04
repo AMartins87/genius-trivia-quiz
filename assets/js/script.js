@@ -53,6 +53,7 @@
  
  function resetConditions() {
      nextButton.classList.add('hide');
+     resultsContainer.classList.add('hide');
      while (optionButton.firstChild) {
          optionButton.removeChild(optionButton.firstChild);
      }
@@ -67,7 +68,6 @@
      });
      if (mixQuestions.length > currentQuestionIndex + 1) {
          nextButton.classList.remove('hide');
-        
      } else {
          startButton.innerText = 'Play again!';
          startButton.classList.remove('hide');
