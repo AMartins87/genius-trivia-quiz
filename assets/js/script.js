@@ -60,9 +60,9 @@
  function selectOption(e) {
      const clickedButton = e.target;
      const correct = clickedButton.dataset.correct;
-     setStatusClass(document.body, correct);
+     setCorrectnessClass(document.body, correct);
      Array.from(optionButton.children).forEach(button => {
-         setStatusClass(button, button.dataset.correct);
+         setCorrectnessClass(button, button.dataset.correct);
      });
      if (mixQuestions.length > currentQuestionIndex + 1) {
          nextButton.classList.remove('hide');
@@ -72,8 +72,8 @@
      }
  }
  
- function setStatusClass(element, correct) {
-     clearStatusClass(element);
+ function setCorrectnessClass(element, correct) {
+     clearCorrectnessClass(element);
      if (correct) {
          element.classList.add('correct');
      } else {
@@ -81,7 +81,7 @@
      }
  }
  
- function clearStatusClass(element) {
+ function clearCorrectnessClass(element) {
      element.classList.remove('correct');
      element.classList.remove('incorrect');
  }

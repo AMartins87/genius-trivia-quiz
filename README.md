@@ -22,8 +22,8 @@ The purpose of Genius Trivia Quiz is to test user's advanced general knowledge t
 
 - ### **QUIZ PAGE - START**
 
-- Shows a questions with three possible options on display
-- Next Questions button is not visible before you select your answer
+    - Shows a questions with three possible options on display
+    - Next Questions button is not visible before you select your answer
 
 ![Quiz game page](assets/wireframes/wireframe_game.JPG)
 
@@ -33,12 +33,12 @@ The purpose of Genius Trivia Quiz is to test user's advanced general knowledge t
 ![Hover function](assets/wireframes/wireframe_game_hover.JPG)
 
 - ### **QUIZ PAGE - CORRECT/INCORRECT OPTION**
-- When answer is selected, the background of the buttons will turn light green/light red according to being correct/incorrect.
+    - When answer is selected, the background of the buttons will turn light green/light red according to being correct/incorrect.
 
 ![Quiz game page with correct/incorrect answer](assets/wireframes/wireframe_game_correct_incorrect.JPG)
 
 - ### **QUIZ PAGE - END SCREEN**
-- The screen shows the last question answered and 'Play Again' button.
+    - The screen shows the last question answered and 'Play Again' button.
 
 ![End of game page](assets/wireframes/wireframe_end_screen_w_hover.JPG)
 
@@ -95,7 +95,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 1.  In the GitHub repository, navigate to the **Settings** tab, then **Pages** section
 2.  From the **Source** section drop-down menu, select the **Branch:main**
 3.  Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-4.  Now this site is live and published on https://amartins87.github.io/Genius_Trivia_Quiz/.
+4.  Now this site is live and published on https://amartins87.github.io/genius-trivia-quiz/.
 
 
 ## **CREDITS**
