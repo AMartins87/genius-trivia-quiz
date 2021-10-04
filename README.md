@@ -50,7 +50,7 @@ I would like to add pop up modals with interesting facts about the correct answe
 
 Here is my [Balsamiq wireframes](assets/wireframes/Balsamiq_wireframe.JPG). 
 
-I kept the styling of the game to a minimum to make it accessible and easy to navigate through on every device. I set a simple background image with a back up background color of black in case the image doesn't load up for a good contrast. 
+I kept the styling of the game to a minimum to make it accessible and easy to navigate through on every device. I set a simple background image with a back up background color of black for a good contrast in case the image doesn't load up.
 
 I tested the game in Chrome Developer Tools using responsive design as well as all of the available device types listed. 
 
