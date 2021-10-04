@@ -32,7 +32,7 @@ function startQuiz() {
         questionBox.classList.remove('hide'),
         nextQuestion();
     console.log(mixQuestions);
-    mixQuestions.splice(5, 12);
+    mixQuestions.splice(5, 12); // this will mix and select 5 random questions each time the user plays the quiz. Researched and used code from W3schools.com
     console.log(mixQuestions);
 }
 
