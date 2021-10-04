@@ -21,23 +21,23 @@ The purpose of Genius Trivia Quiz is to test user's advanced general knowledge t
 ![Footer image](assets/wireframes/wireframe_footer.JPG)
 
 - ### **QUIZ PAGE**
-    - Shows a questions with three possible options on display
-    - Next Questions button is not visible before you select your answer
+
+- Shows a questions with three possible options on display
+- Next Questions button is not visible before you select your answer
 
 ![Quiz game page](assets/wireframes/wireframe_game.JPG)
 
-    - When user hovers over the options, the buttons will change their background color to a shade of dark blue color and text will become bold white. 
+- When user hovers over the options, the buttons will change their background color to a shade of dark blue color and text will become bold white. 
 
 ![Hover function](assets/wireframes/wireframe_game_hover.JPG)
 
-    - If correct answer is selected, the background of the button will turn light green.
+- When answer is selected, the background of the buttons will turn light green/light red according to being correct/incorrect.
 
-![Quiz game page with correct answer](assets/wireframes/wireframe_game_correct.JPG)
+![Quiz game page with correct/incorrect answer](assets/wireframes/wireframe_game_correct_incorrect.JPG)
 
-- If incorrect answer is selected, the background of the button will turn light red.
+- The screen shows the last question answered and 'Play Again' button.
 
-![Quiz game page with incorrect answer](assets/wireframes/wireframe_game_incorrect.JPG)
-
+![End of game page](assets/wireframes/wireframe_end_screen_w_hover.JPG)
 
 ## **FUTURE DEVELOPMENT**
 
@@ -45,11 +45,11 @@ I would like to add pop up modals with interesting facts about the correct answe
 
 ## **TESTING**
 
-As you can see in my [wireframes](assets/wireframes/Makaton_wireframe_all.png), the layout was originally planned slightly differently, including the position and display of a navbar. 
+Here is my [Balsamiq wireframes](assets/wireframes/Balsamiq_wireframe.JPG). 
 
 I kept the styling of the game to a minimum to make it accessible and easy to navigate through on every device. I set a simple background image with a back up background color of black in case the image doesn't load up for a good contrast. 
 
-I tested every page in Chrome Developer Tools using responsive design as well as all of the available device types listed. 
+I tested the game in Chrome Developer Tools using responsive design as well as all of the available device types listed. 
 
 I tested the quiz on iPad and iPhone 8, in Chrome and Microsoft Edge on my desktop PC with screen resolution of 1920px by 1080px, and I tested it on a laptop in Chrome, Mozilla, and Microsoft Edge. The site is responsive, looks good, content is readable on all standard screen sizes and I found it easy to click on all buttons. 
 
@@ -60,7 +60,7 @@ I tested the quiz on iPad and iPhone 8, in Chrome and Microsoft Edge on my deskt
 
 -   **CSS** (No errors were found when passing through the official Jigsaw validator
     
-    ![Jigsaw Validator](assets/wireframes/W3C_CSS_Validator_Results.JPG)
+    ![Jigsaw Validator](assets/wireframes/Jigsaw_CSS_Validator_Results.JPG)
 
 
 ### **ACCESSIBILITY**
