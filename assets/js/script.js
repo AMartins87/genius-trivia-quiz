@@ -33,7 +33,7 @@
  }
  
  function nextQuestion() {
-     resetConditions();
+     clearConditions();
      showQuestion(mixQuestions[currentQuestionIndex]);
  }
  
@@ -51,7 +51,7 @@
      });
  }
  
- function resetConditions() {
+ function clearConditions() {
      nextButton.classList.add('hide');
      resultsContainer.classList.add('hide');
      while (optionButton.firstChild) {

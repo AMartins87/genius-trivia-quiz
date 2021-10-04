@@ -38,7 +38,7 @@ The purpose of Genius Trivia Quiz is to test user's advanced general knowledge t
 ![Quiz game page with correct/incorrect answer](assets/wireframes/wireframe_game_correct_incorrect.JPG)
 
 - ### **QUIZ PAGE - END SCREEN**
-    - The screen shows the last question answered and 'Play Again' button.
+    - The screen shows a text 'Finished!' and 'Play Again' button.
 
 ![End of game page](assets/wireframes/wireframe_end_screen_w_hover.JPG)
 
