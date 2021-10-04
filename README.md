@@ -27,13 +27,14 @@ The purpose of Genius Trivia Quiz is to test user's advanced general knowledge t
 
 ![Quiz game page](assets/wireframes/wireframe_game.JPG)
 
-- ### **QUIZ PAGE - HOVER **
+- ### **QUIZ PAGE - HOVER**
     - When a user hovers over the options, the buttons will change their background color to a shade of dark blue color and the text will become bold white. 
 
 ![Hover function](assets/wireframes/wireframe_game_hover.JPG)
 
 - ### **QUIZ PAGE - CORRECT/INCORRECT OPTION**
     - When an answer is selected, the background of the buttons will turn light green/light red according to being correct/incorrect.
+    - User can see which answer he selected as the font will change to italic and border will increase to 5px.
     - Next Question button will appear and again it will turn dark blue with text to bold white when you hover over it.
 
 ![Quiz game page with correct/incorrect answer](assets/wireframes/wireframe_game_correct_incorrect.JPG)
