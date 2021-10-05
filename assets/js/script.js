@@ -21,18 +21,18 @@ nextButton.addEventListener('click', () => {
 });
 
 function hideRules() {
-    document.getElementById("rules-container").style.display = "none";
+    document.getElementById("rules-container").style.display = "none"; // used by index.html to hide rules of the quiz after user clicks on play button
 }
 
+// Starts the quiz
 function startQuiz() {
-    startButton.classList.add('hide');
+    startButton.classList.add('hide'); // hides play button
 
-    mixQuestions = questions.sort(() => Math.random() - 0.5),
+    mixQuestions = questions.sort(() => Math.random() - 0.5), // this mixes questions
         currentQuestionIndex = 0,
         questionBox.classList.remove('hide'),
         nextQuestion();
-    console.log(mixQuestions);
-    mixQuestions.splice(5, 12); // this will mix and select 5 random questions each time the user plays the quiz. Researched and used code from W3schools.com
+    mixQuestions.splice(5, 12); // This selects 5 random questions each time the user plays the quiz. used code from w3schools.com
     console.log(mixQuestions);
 }
 
@@ -40,6 +40,7 @@ function nextQuestion() {
     clearConditions();
     showQuestion(mixQuestions[currentQuestionIndex]);
 }
+
 
 function showQuestion(question) {
     questionSection.innerHTML = question.question;
@@ -58,6 +59,7 @@ function showQuestion(question) {
     });
 }
 
+// Hides next question button 
 function clearConditions() {
     nextButton.classList.add('hide');
     resultsContainer.classList.add('hide');
@@ -66,11 +68,12 @@ function clearConditions() {
     }
 }
 
+// Listens for selected option
 function selectOption(e) {
     const clickedButton = e.target;
     const correct = clickedButton.dataset.correct;
     setCorrectnessClass(document.body, correct);
-    document.getElementById(e.target.id).classList.add('selection');
+    document.getElementById(e.target.id).classList.add('selection'); // highlights users clicked choice
     console.log(e.target.id);
     Array.from(optionButton.children).forEach(button => {
         setCorrectnessClass(button, button.dataset.correct);
@@ -79,18 +82,20 @@ function selectOption(e) {
         nextButton.classList.remove('hide');
     } else {
         startButton.classList.add('hide');
-        myTimeVar = setTimeout(showEndScreen, 4000);
+        myTimeVar = setTimeout(showEndScreen, 4000); // delays a move to an end screen
 
     }
 }
 
+// Removes questions container and shows end of quiz screen
 function showEndScreen() {
-    startButton.innerText = 'Play again!';
-    startButton.classList.remove('hide');
-    questionBox.classList.add('hide');
-    resultsContainer.classList.remove('hide');
+    startButton.innerText = 'Play again!'; // changes text of the button from Play to Play again!
+    startButton.classList.remove('hide'); // shows play button for user to try the quiz again
+    questionBox.classList.add('hide'); // hides questions container
+    resultsContainer.classList.remove('hide'); // shows end of quiz screen
 }
 
+// Gives options colored background based on correct/incorrect answers
 function setCorrectnessClass(element, correct) {
     clearCorrectnessClass(element);
     if (correct) {
@@ -100,10 +105,12 @@ function setCorrectnessClass(element, correct) {
     }
 }
 
+// Hides the colored background
 function clearCorrectnessClass(element) {
     element.classList.remove('correct');
     element.classList.remove('incorrect');
 }
+
 
 let questions = [
 

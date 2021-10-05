@@ -2,7 +2,7 @@
 
 You can see the live site [here](https://amartins87.github.io/genius-trivia-quiz/).
 
-The purpose of Genius Trivia Quiz is to test user's advanced general knowledge through a variety of questions. 
+The purpose of Genius Trivia Quiz is to test user's general knowledge through a variety of advanced questions. THe quiz is suitable for all those who would like to learn new nteresting facts. 
 
 ![Mock up image](assets/wireframes/Mock_up_MS2.JPG)
 
