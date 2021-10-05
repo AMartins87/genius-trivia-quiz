@@ -12,7 +12,7 @@ const resultsContainer = document.getElementById('results-container');
 
 let mixQuestions;
 let currentQuestionIndex;
-let myTimeVar = 4000;
+let TimeOut = 4000;
 
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
@@ -33,7 +33,6 @@ function startQuiz() {
         questionBox.classList.remove('hide'),
         nextQuestion();
     mixQuestions.splice(5, 12); // This selects 5 random questions each time the user plays the quiz. used code from w3schools.com
-    console.log(mixQuestions);
 }
 
 function nextQuestion() {
@@ -74,7 +73,6 @@ function selectOption(e) {
     const correct = clickedButton.dataset.correct;
     setCorrectnessClass(document.body, correct);
     document.getElementById(e.target.id).classList.add('selection'); // highlights users clicked choice
-    console.log(e.target.id);
     Array.from(optionButton.children).forEach(button => {
         setCorrectnessClass(button, button.dataset.correct);
     });
@@ -82,7 +80,7 @@ function selectOption(e) {
         nextButton.classList.remove('hide');
     } else {
         startButton.classList.add('hide');
-        myTimeVar = setTimeout(showEndScreen, 4000); // delays a move to an end screen
+        TimeOut = setTimeout(showEndScreen, 4000); // delays a move to an end screen
 
     }
 }
@@ -127,7 +125,7 @@ let questions = [
             {
                 text: 'Stonefish',
                 correct: true
-            } // popOut: "Found in the waters of Australia, these camouflaged bottom dwellers are incredibly poisonous. The stonefish can inject a venom through its dorsal fin spines, and is capable of killing an adult person in less than an hour. Yikes!"
+            } 
         ],
     },
     {
@@ -139,7 +137,7 @@ let questions = [
             {
                 text: '12',
                 correct: true
-            }, // popOut: "The 12 languages that are written from right to left are Arabic, Aramaic, Azeri, Divehi, Fula, Hebrew, Kurdish, N'ko, Persian, Rohingya, Syriac, and Urdu."
+            }, 
             {
                 text: 20,
                 correct: false
@@ -159,7 +157,7 @@ let questions = [
             {
                 text: 'Pinky',
                 correct: true
-            } // popOut: "Your little digit has a lot of power. According to hand therapist Laurie Rogers, via The New York Times, without your pinky finger, you would lose 50% of your hand strength, easily. That's because it aids the ring finger by providing the power to grip and make a fist, while your index, middle finger, and thumb are best for grabbing and pinching."
+            } 
         ],
     },
     {
@@ -171,7 +169,7 @@ let questions = [
             {
                 text: 'Turtle',
                 correct: true
-            }, // popOut: "First, what we now know of as a mouse had the not-so-catchy name, 'X-Y Position Indicator for a Display System,' then it got the snappier moniker turtle, then rodent, and finally a mouse."                ],
+            }, 
             {
                 text: 'Snail',
                 correct: false
@@ -183,7 +181,7 @@ let questions = [
         options: [{
                 text: 'A fear of bathing',
                 correct: true
-            }, // popOut: "It is the persistent, abnormal and unwarranted fear of bathing, washing or cleaning. It is a situation-specific phobia."
+            },
             {
                 text: 'A fear of work or the workplace',
                 correct: false
@@ -199,7 +197,7 @@ let questions = [
         options: [{
                 text: 'Mercury and Venus',
                 correct: true
-            }, // popOut: "Mars has two moons, Neptune has 14, and Uranus has 27, according to NASA. Jupiter has 79 known moons and Saturn has 53, plus nine more that might officially be deemed moons once we know a little more about them. Mercury and Venus, on the other hand, don't have any moons at all."
+            }, 
             {
                 text: 'Mars and Mercury',
                 correct: false
@@ -215,7 +213,7 @@ let questions = [
         options: [{
                 text: 'Sperm whale',
                 correct: true
-            }, // popOut: "It's been reported by the BBC that while a jet engine produces around 188 decibels of noise during take-off, the sperm whale tops that with a clicking sound that has been recorded at 230 decibels."
+            }, 
             {
                 text: 'Snapping Shrimp',
                 correct: false
@@ -239,7 +237,7 @@ let questions = [
             {
                 text: 'Denmark',
                 correct: true
-            } // popOut: 'The country of Denmark has been using the same flag design since 1625 and holds the record for the oldest continuously used national flag in the world. A white Scandinavian cross on a bright red background, the bold and instantly recognizable flag is known as the "Dannebrog" or "Danish cloth".'
+            } 
 
         ]
     },
@@ -252,7 +250,7 @@ let questions = [
             {
                 text: 'Saskatchewan, Canada',
                 correct: true
-            }, // popOut: "In 2019, paleontologists from the University of Alberta announced that they had discovered the biggest Tyrannosaurus rex skeleton ever found. Measuring 42.7 feet long, the beast likely lived in the Canadian province of Saskatchewan around 66 million years ago."
+            }, 
             {
                 text: 'Lourinhã, Portugal',
                 correct: false
@@ -272,7 +270,7 @@ let questions = [
             {
                 text: 'Lake Baikal',
                 correct: true
-            } // popOut: "Lake Baikal in Southern Siberia is 5,315 feet or 1,620 meters deep. It also holds the record for being the largest freshwater lake in the world and the oldest, dating back about 25 million years."            
+            }   
         ]
     },
     {
@@ -288,7 +286,7 @@ let questions = [
             {
                 text: '1%',
                 correct: true
-            } // popOut: "Sweden has figured out how to deal with its garbage in an incredible way. According to The Verge, the country is able to recycle about half of its household trash, and the rest is 'converted into energy through an incineration process called waste-to-energy,' leaving roughly 1% for its landfills."
+            } 
         ]
     },
     {
@@ -300,7 +298,7 @@ let questions = [
             {
                 text: '90 seconds',
                 correct: true
-            }, // popOut: "The term dates back to at least the 8th Century, when the monk St Bede used it to define a period of 90 seconds.An hour in medieval times therefore consisted of 40 moments. The Hebrew calendar has a shorter definition of a moment, referred to as rega, which is roughly equivalent to 5/144 of a second."
+            },
             {
                 text: '45 seconds',
                 correct: false
