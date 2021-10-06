@@ -4,7 +4,7 @@ You can see the live site [here](https://amartins87.github.io/genius-trivia-quiz
 
 The purpose of Genius Trivia Quiz is to test user's general knowledge through a variety of advanced questions. The quiz is suitable for all those who would like to learn new interesting facts. 
 
-The objective of this project is to create a simple and easy to navigate quiz without a need to register. 
+The objective of this project is to create a simple and easy to navigate quiz without a need to register.
 
 ![Mock up image](assets/wireframes/Mock_up_MS2.JPG)
 
@@ -48,13 +48,14 @@ The objective of this project is to create a simple and easy to navigate quiz wi
 
 ## **FUTURE DEVELOPMENT**
 
-I would like to add pop-up modals with interesting facts about correct answers. I would also like to add a question counter and a timer. 
+I would like to add pop-up modals with interesting facts about correct answers. I would also like to add a question counter and a timer.
+I will also add new questions to keep the content interesting and educational for users. 
 
 ## **TESTING**
 
 Here are my [Balsamiq wireframes](assets/wireframes/Balsamiq_wireframe.JPG). 
 
-I kept the styling of the quiz to a minimum to make it accessible and easy to navigate through on every device without the need for media queries. I set a simple background image with a backup background color of black for a good contrast in case the image doesn't load up.
+I kept the styling of the quiz to a minimum to make it accessible and easy to navigate through on every device without the need for media queries. I set a simple background image with a backup background color of black for a good contrast in case the image doesn't load up. The site consists only one page and is responsive.s
 
 I tested the quiz in Chrome Developer Tools using responsive design as well as all of the available device types listed. 
 
