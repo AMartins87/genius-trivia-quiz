@@ -13,12 +13,12 @@ const resultsContainer = document.getElementById('results-container');
 
 let mixQuestions;
 let currentQuestionIndex;
-let TimeOut = 4000;
+let TimeOut = 2500;
 
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
-    nextQuestion(); 
+    nextQuestion();
 });
 
 function hideRules() {
@@ -27,13 +27,21 @@ function hideRules() {
 
 // Starts the quiz
 function startQuiz() {
-    startButton.classList.add('hide'); // hides play button
-    mixQuestions = questions.sort(() => Math.random() - 0.5), // this mixes questions
-        currentQuestionIndex = 0,
-        questionBox.classList.remove('hide'), // questions will appear 
-        nextQuestion(); // calling next question
-    mixQuestions.splice(5, 15); // This selects 5 random questions each time the user plays the quiz. Used code from w3schools.com
-}
+    console.log(startButton.innerHTML)
+    if (startButton.innerHTML == 'Play again!') {
+        window.location.reload();
+    } else {
+        startButton.classList.add('hide'); // hides play button
+        mixQuestions = questions;
+        questions.sort();
+        console.log(questions.length);
+        mixQuestions = questions.sort(() => Math.random() - 0.5), // this mixes questions
+            currentQuestionIndex = 0,
+            questionBox.classList.remove('hide'), // questions will appear 
+            nextQuestion(); // calling next question
+        mixQuestions.splice(5, 15); // This selects 5 random questions each time the user plays the quiz. Used code from w3schools.com
+    }
+};
 
 function nextQuestion() {
     clearConditions(); // resets everything back to a default setting, i.e. no correct/incorrect background, next question button disappears
@@ -69,8 +77,8 @@ function clearConditions() {
 // Listens for a selected option
 function selectOption(e) {
     const clickedButton = e.target;
-    const correct = clickedButton.dataset.correct; 
-    setCorrectnessClass(document.body, correct); 
+    const correct = clickedButton.dataset.correct;
+    setCorrectnessClass(document.body, correct);
     document.getElementById(e.target.id).classList.add('selection'); // highlights users clicked choice
     Array.from(optionButton.children).forEach(button => {
         setCorrectnessClass(button, button.dataset.correct);
@@ -79,7 +87,7 @@ function selectOption(e) {
         nextButton.classList.remove('hide');
     } else {
         startButton.classList.add('hide');
-        TimeOut = setTimeout(showEndScreen, 4000); // delays a move to an end screen
+        setTimeout(showEndScreen, TimeOut); // delays a move to an end screen
     }
 }
 

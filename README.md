@@ -71,6 +71,9 @@ I tested the quiz on an iPad and iPhone 8, in Chrome and Microsoft Edge on my de
     ![Jigsaw Validator](assets/wireframes/Jigsaw_CSS_Validator_Results.JPG)
 
 -   **JSHINT** (1 warning and 1 unused variable found)
+ - I had to select 'New JavaScript features (ES6)' in JShint.com in configuration as I am using const and let variables and arrow function syntax which are available in ES6 or Mozilla JS extension.
+ - Function hideRules() in script.js, line 23 is marked as unused variable in jshint report, however this function is called in index.html.
+ - Jshint warning: jscript.js, line 34: Expected an assignment or function call and instead saw an expression >> this applies to calling a function nextQuestion() where I am calling for a new question - this warning is not valid as I'm simply calling a function nextQuestion() in my startQuiz() function.
     
     ![JShint Tool](assets/wireframes/JShint_report.JPG)
 
@@ -92,12 +95,9 @@ I checked that the chosen colors and fonts are easy to read. The quiz page has p
 
 
 ## **BUGS**
--   I created a function for users to be taken to after they answer the last question. However once they clicked on the answer, it would take them straightaway to the end screen without the possibility of seeing if they answered correctly or not. This bug got fixed once I added the setTimeout() method as per my mentor's advice. 
--   I had to select 'New JavaScript features (ES6)' in JShint.com in configuration as I am using const and let variables and arrow function syntax which are available in ES6 or Mozilla JS extension.
+-   I created a function for users to be taken to an end screen after they answer the last question. However once they clicked on the answer, it would take them straightaway to the end screen without the possibility of seeing if they answered correctly or not. This bug got fixed once I added the setTimeout() method so it delays the screen by couple of seconds as per my mentor's advice. 
 
 ## **UNFIXED BUGS**
--   Function hideRules() in script.js, line 23 is marked as unused variable in jshint report, however this function is called in index.html.
--   Jshint warning: Expected an assignment or function call and instead saw an expression >> it applies to nextQuestion() where I am calling for a new question.
 
 ## **DEPLOYMENT**
 
@@ -112,7 +112,6 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 - **CONTENT**
     - My source for questions and correct answers was [Best Life](https://bestlifeonline.com/genius-trivia-questions/).
-
     - The icons in the rules' container and at the end of the game were taken from [Font Awesome](https://fontawesome.com/)
     - Font is sourced from [Google Fonts](https://fonts.google.com/). I chose IM Fell Double Pica SC specifically to attract users and grab their attention. It also compliments the overall look of the quiz styling.  
 
