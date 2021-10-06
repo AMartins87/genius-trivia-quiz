@@ -67,7 +67,7 @@ I tested the quiz on an iPad and iPhone 8, in Chrome and Microsoft Edge on my de
     
     ![Jigsaw Validator](assets/wireframes/Jigsaw_CSS_Validator_Results.JPG)
 
--   **JSHINT** (17 warnings and 1 unused variable found)
+-   **JSHINT** (1 warning and 1 unused variable found)
     
     ![JShint Tool](assets/wireframes/JShint_report.JPG)
 
@@ -89,8 +89,7 @@ I checked that the chosen colors and fonts are easy to read. The page has passed
 
 
 ## **BUGS**
-
--   
+-   Function hideRules() in script.js, line 23 is marked as unused variable in jshint report, however this function is called in index.html.
 
 ## **UNFIXED BUGS**
 
