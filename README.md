@@ -2,7 +2,7 @@
 
 You can see the live site [here](https://amartins87.github.io/genius-trivia-quiz/).
 
-The purpose of Genius Trivia Quiz is to test user's general knowledge through a variety of advanced questions. THe quiz is suitable for all those who would like to learn new nteresting facts. 
+The purpose of Genius Trivia Quiz is to test user's general knowledge through a variety of advanced questions. THe quiz is suitable for all those who would like to learn new interesting facts. 
 
 ![Mock up image](assets/wireframes/Mock_up_MS2.JPG)
 
@@ -90,9 +90,9 @@ I checked that the chosen colors and fonts are easy to read. The page has passed
 
 ## **BUGS**
 -   Function hideRules() in script.js, line 23 is marked as unused variable in jshint report, however this function is called in index.html.
+-   Jshint warning: Expected an assignment or function call and instead saw an expression >> it applies to nextQuestion() where I am calling for a new question.
 
 ## **UNFIXED BUGS**
-
 -   
 
 ## **DEPLOYMENT**
@@ -112,7 +112,8 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
     - The icons in the rules container and at the end of the game were taken from [Font Awesome](https://fontawesome.com/)
 
 - **CODE**
-   
+    - As mentioned in comments in my script.js, I have used the walk through Love Maths project as my anchor point, and [Site Point](https://www.sitepoint.com/simple-javascript-quiz/) to guide me through the project.
+    - I took an inspiration of the look for my quiz from [CodingNepal - JS](https://youtu.be/WUBhpSRS_fk)/[CodingNepal - HTML/CSS](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/);
 
 - **MEDIA**
 

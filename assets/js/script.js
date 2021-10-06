@@ -1,6 +1,7 @@
 /** This JS script was created with the help from 
  * the walk through Love Maths project 
- * and using https://www.sitepoint.com/simple-javascript-quiz/
+ * and using https://www.sitepoint.com/simple-javascript-quiz/ 
+ * and https://www.codingnepalweb.com/quiz-app-with-timer-javascript/
  */
 
 const startButton = document.getElementById('play-btn');
@@ -17,7 +18,7 @@ let TimeOut = 4000;
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
-    nextQuestion();
+    nextQuestion(); 
 });
 
 function hideRules() {
@@ -27,19 +28,17 @@ function hideRules() {
 // Starts the quiz
 function startQuiz() {
     startButton.classList.add('hide'); // hides play button
-
     mixQuestions = questions.sort(() => Math.random() - 0.5), // this mixes questions
         currentQuestionIndex = 0,
-        questionBox.classList.remove('hide'),
-        nextQuestion();
-    mixQuestions.splice(5, 12); // This selects 5 random questions each time the user plays the quiz. used code from w3schools.com
+        questionBox.classList.remove('hide'), // questions will appear 
+        nextQuestion(); // calling next question
+    mixQuestions.splice(5, 13); // This selects 5 random questions each time the user plays the quiz. Used code from w3schools.com
 }
 
 function nextQuestion() {
-    clearConditions();
+    clearConditions(); // resets everything back to a default setting, i.e. no correct/incorrect background, next question button disappears
     showQuestion(mixQuestions[currentQuestionIndex]);
 }
-
 
 function showQuestion(question) {
     questionSection.innerHTML = question.question;
@@ -67,11 +66,11 @@ function clearConditions() {
     }
 }
 
-// Listens for selected option
+// Listens for a selected option
 function selectOption(e) {
     const clickedButton = e.target;
-    const correct = clickedButton.dataset.correct;
-    setCorrectnessClass(document.body, correct);
+    const correct = clickedButton.dataset.correct; 
+    setCorrectnessClass(document.body, correct); 
     document.getElementById(e.target.id).classList.add('selection'); // highlights users clicked choice
     Array.from(optionButton.children).forEach(button => {
         setCorrectnessClass(button, button.dataset.correct);
@@ -81,7 +80,6 @@ function selectOption(e) {
     } else {
         startButton.classList.add('hide');
         TimeOut = setTimeout(showEndScreen, 4000); // delays a move to an end screen
-
     }
 }
 
@@ -125,7 +123,7 @@ let questions = [
             {
                 text: 'Stonefish',
                 correct: true
-            } 
+            }
         ],
     },
     {
@@ -137,7 +135,7 @@ let questions = [
             {
                 text: '12',
                 correct: true
-            }, 
+            },
             {
                 text: 20,
                 correct: false
@@ -157,7 +155,7 @@ let questions = [
             {
                 text: 'Pinky',
                 correct: true
-            } 
+            }
         ],
     },
     {
@@ -169,7 +167,7 @@ let questions = [
             {
                 text: 'Turtle',
                 correct: true
-            }, 
+            },
             {
                 text: 'Snail',
                 correct: false
@@ -197,7 +195,7 @@ let questions = [
         options: [{
                 text: 'Mercury and Venus',
                 correct: true
-            }, 
+            },
             {
                 text: 'Mars and Mercury',
                 correct: false
@@ -213,7 +211,7 @@ let questions = [
         options: [{
                 text: 'Sperm whale',
                 correct: true
-            }, 
+            },
             {
                 text: 'Snapping Shrimp',
                 correct: false
@@ -237,7 +235,7 @@ let questions = [
             {
                 text: 'Denmark',
                 correct: true
-            } 
+            }
 
         ]
     },
@@ -250,7 +248,7 @@ let questions = [
             {
                 text: 'Saskatchewan, Canada',
                 correct: true
-            }, 
+            },
             {
                 text: 'Lourinhã, Portugal',
                 correct: false
@@ -270,7 +268,7 @@ let questions = [
             {
                 text: 'Lake Baikal',
                 correct: true
-            }   
+            }
         ]
     },
     {
@@ -286,7 +284,7 @@ let questions = [
             {
                 text: '1%',
                 correct: true
-            } 
+            }
         ]
     },
     {
@@ -301,6 +299,22 @@ let questions = [
             },
             {
                 text: '45 seconds',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: "What is correct name given to the dot on top of the letter i?",
+        options: [{
+                text: 'Interpunct',
+                correct: false
+            },
+            {
+                text: 'Tittle ',
+                correct: true
+            },
+            {
+                text: 'Diacritic',
                 correct: false
             }
         ]
