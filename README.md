@@ -2,7 +2,9 @@
 
 You can see the live site [here](https://amartins87.github.io/genius-trivia-quiz/).
 
-The purpose of Genius Trivia Quiz is to test user's general knowledge through a variety of advanced questions. THe quiz is suitable for all those who would like to learn new interesting facts. 
+The purpose of Genius Trivia Quiz is to test user's general knowledge through a variety of advanced questions. The quiz is suitable for all those who would like to learn new interesting facts. 
+
+The objective of this project is to create a simple and easy to navigate quiz without a need to register. 
 
 ![Mock up image](assets/wireframes/Mock_up_MS2.JPG)
 
@@ -46,7 +48,7 @@ The purpose of Genius Trivia Quiz is to test user's general knowledge through a 
 
 ## **FUTURE DEVELOPMENT**
 
-I would like to add pop-up modals with interesting facts about the correct answers. I would also like to add a question counter and a timer. 
+I would like to add pop-up modals with interesting facts about correct answers. I would also like to add a question counter and a timer. 
 
 ## **TESTING**
 
@@ -54,7 +56,7 @@ Here are my [Balsamiq wireframes](assets/wireframes/Balsamiq_wireframe.JPG).
 
 I kept the styling of the quiz to a minimum to make it accessible and easy to navigate through on every device without the need for media queries. I set a simple background image with a backup background color of black for a good contrast in case the image doesn't load up.
 
-I tested the uiz in Chrome Developer Tools using responsive design as well as all of the available device types listed. 
+I tested the quiz in Chrome Developer Tools using responsive design as well as all of the available device types listed. 
 
 I tested the quiz on an iPad and iPhone 8, in Chrome and Microsoft Edge on my desktop PC with a screen resolution of 1920px by 1080px. I also tested the quiz on a laptop in Chrome, Mozilla, and Microsoft Edge. The site is responsive, looks good, content is readable on all standard screen sizes and I found it easy to click on all buttons after the padding got increased.
 
@@ -75,7 +77,7 @@ I tested the quiz on an iPad and iPhone 8, in Chrome and Microsoft Edge on my de
 
 ### **ACCESSIBILITY**
 
-I checked that the chosen colors and fonts are easy to read. The page has passed through  the Lighthouse reporting tool in Chrome developer tools on both mobile and desktop.
+I checked that the chosen colors and fonts are easy to read. The quiz page has passed through the Lighthouse reporting tool in Chrome developer tools on both mobile and desktop.
 - [Contrast checker - body and header text](assets/wireframes/accessibility/Body_text_contrast_checker.JPG)
 - [Contrast checker - correct class](assets/wireframes/accessibility/Correct_class_contrast_checker.JPG)
 - [Contrast checker - incorrect class](assets/wireframes/accessibility/Incorrect_class_contrast_checker.JPG)
@@ -89,6 +91,7 @@ I checked that the chosen colors and fonts are easy to read. The page has passed
 
 
 ## **BUGS**
+-   I had to select 'New JavaScript features (ES6)' in JShint.com in configuration as I am using const and let variables and arrow function syntax which are available in ES6 or Mozilla JS extension.
 -   Function hideRules() in script.js, line 23 is marked as unused variable in jshint report, however this function is called in index.html.
 -   Jshint warning: Expected an assignment or function call and instead saw an expression >> it applies to nextQuestion() where I am calling for a new question.
 
@@ -109,10 +112,11 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 - **CONTENT**
     - My source for questions and correct answers was [Best Life](https://bestlifeonline.com/genius-trivia-questions/).
 
-    - The icons in the rules container and at the end of the game were taken from [Font Awesome](https://fontawesome.com/)
+    - The icons in the rules' container and at the end of the game were taken from [Font Awesome](https://fontawesome.com/)
+    - Font is sourced from [Google Fonts](https://fonts.google.com/). I chose IM Fell Double Pica SC specifically to attract users and grab their attention. It also compliments the overall look of the quiz styling.  
 
 - **CODE**
-    - As mentioned in comments in my script.js, I have used the walk through Love Maths project as my anchor point, and [Site Point](https://www.sitepoint.com/simple-javascript-quiz/) to guide me through the project.
+    - As mentioned in comments in my script.js, I have used the walk-through Love Maths project as my anchor point, and [Site Point](https://www.sitepoint.com/simple-javascript-quiz/) to guide me through the project.
     - I took an inspiration of the look for my quiz from [CodingNepal - JS](https://youtu.be/WUBhpSRS_fk)/[CodingNepal - HTML/CSS](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/);
 
 - **MEDIA**

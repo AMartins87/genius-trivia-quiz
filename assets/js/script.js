@@ -32,7 +32,7 @@ function startQuiz() {
         currentQuestionIndex = 0,
         questionBox.classList.remove('hide'), // questions will appear 
         nextQuestion(); // calling next question
-    mixQuestions.splice(5, 13); // This selects 5 random questions each time the user plays the quiz. Used code from w3schools.com
+    mixQuestions.splice(5, 15); // This selects 5 random questions each time the user plays the quiz. Used code from w3schools.com
 }
 
 function nextQuestion() {
@@ -137,7 +137,7 @@ let questions = [
                 correct: true
             },
             {
-                text: 20,
+                text: '20',
                 correct: false
             }
         ],
@@ -315,6 +315,38 @@ let questions = [
             },
             {
                 text: 'Diacritic',
+                correct: false
+            }
+        ]
+    },
+    {
+        question: "How many muscles does a cat have in each ear?",
+        options: [{
+                text: '17',
+                correct: false
+            },
+            {
+                text: 'None ',
+                correct: false
+            },
+            {
+                text: '32',
+                correct: true
+            }
+        ]
+    },
+    {
+        question: "Who took the assumed name Sebastian Melmoth when living in Paris?",
+        options: [{
+                text: 'Oscar Wilde',
+                correct: true
+            },
+            {
+                text: 'Jim Morrison ',
+                correct: false
+            },
+            {
+                text: 'Samuel Beckett',
                 correct: false
             }
         ]
