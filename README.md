@@ -91,12 +91,12 @@ I checked that the chosen colors and fonts are easy to read. The quiz page has p
 
 
 ## **BUGS**
+-   I created a function for users to be taken to after they answer the last question. However once they clicked on the answer, it would take them straightaway to the end screen without the possibility of seeing if they answered correctly or not. This bug got fixed once I added the setTimeout() method as per my mentor's advice. 
 -   I had to select 'New JavaScript features (ES6)' in JShint.com in configuration as I am using const and let variables and arrow function syntax which are available in ES6 or Mozilla JS extension.
--   Function hideRules() in script.js, line 23 is marked as unused variable in jshint report, however this function is called in index.html.
--   Jshint warning: Expected an assignment or function call and instead saw an expression >> it applies to nextQuestion() where I am calling for a new question.
 
 ## **UNFIXED BUGS**
--   
+-   Function hideRules() in script.js, line 23 is marked as unused variable in jshint report, however this function is called in index.html.
+-   Jshint warning: Expected an assignment or function call and instead saw an expression >> it applies to nextQuestion() where I am calling for a new question.
 
 ## **DEPLOYMENT**
 
@@ -117,8 +117,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 - **CODE**
     - As mentioned in comments in my script.js, I have used the walk-through Love Maths project as my anchor point, and [Site Point](https://www.sitepoint.com/simple-javascript-quiz/) to guide me through the project.
-    - I took an inspiration of the look for my quiz from [CodingNepal - JS](https://youtu.be/WUBhpSRS_fk)/[CodingNepal - HTML/CSS](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/);
+    - I took an inspiration from [CodingNepal - JS](https://youtu.be/WUBhpSRS_fk)/[CodingNepal - HTML/CSS](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/) for the look and from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=979s) for the functionality.
 
 - **MEDIA**
-
     - Background image was sourced from Pexels and it belongs to [Felix Mittermeier](https://www.pexels.com/photo/galaxy-1146134/).
