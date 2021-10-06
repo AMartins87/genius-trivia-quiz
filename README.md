@@ -4,7 +4,7 @@ You can see the live site [here](https://amartins87.github.io/genius-trivia-quiz
 
 The purpose of Genius Trivia Quiz is to test user's general knowledge through a variety of advanced questions. The quiz is suitable for all those who would like to learn new interesting facts. 
 
-The objective of this project is to create a simple and easy to navigate quiz without a need to register.
+The objective of this project is to create a simple and easy to navigate quiz without the need to register.
 
 ![Mock up image](assets/wireframes/Mock_up_MS2.JPG)
 
@@ -12,8 +12,8 @@ The objective of this project is to create a simple and easy to navigate quiz wi
 
 ## **FEATURES**
 
-- ### **START GAME PAGE IMAGE**
-    - The main page has a box with rules of the game and a play button which will turn dark blue with text to bold white when you hover over it.
+- ### **START QUIZ PAGE IMAGE**
+    - The main page has a box with rules of the quiz and a play button which will turn dark blue with text to bold white when you hover over it.
 
 ![Home page image](assets/wireframes/wireframe_main_page.JPG)
 
@@ -37,12 +37,12 @@ The objective of this project is to create a simple and easy to navigate quiz wi
 - ### **QUIZ PAGE - CORRECT/INCORRECT OPTION**
     - When an answer is selected, the background of the buttons will turn light green/light red according to being correct/incorrect.
     - User can see which answer he selected as the font will change to italic and the border will increase to 5px.
-    - Next Question button will appear and again it will turn dark blue with text to bold white when you hover over it.
+    - Next Question button will appear and same hover styling applies for the Next Question button.
 
 ![Quiz game page with correct/incorrect answer](assets/wireframes/wireframe_game_correct_incorrect.JPG)
 
 - ### **QUIZ PAGE - END SCREEN**
-    - The screen shows the text 'Finished!' and 'Play Again' button which will turn dark blue with text to bold white when you hover over it.
+    - The screen shows the text 'Finished!' and 'Play again!' button which will turn dark blue with text to bold white when you hover over it. When user clicks on 'Play again!' button it will take them back to start quiz screen with rules on display and play button.
 
 ![End of game page](assets/wireframes/wireframe_end_screen_w_hover.JPG)
 
@@ -71,9 +71,9 @@ I tested the quiz on an iPad and iPhone 8, in Chrome and Microsoft Edge on my de
     ![Jigsaw Validator](assets/wireframes/Jigsaw_CSS_Validator_Results.JPG)
 
 -   **JSHINT** (1 warning and 1 unused variable found)
- - I had to select 'New JavaScript features (ES6)' in JShint.com in 'Configure' as I am using const and let variables and arrow function syntax which are available in ES6 or Mozilla JS extension.
- - Function hideRules(), line 26 is marked as *unused variable* in jshint report, however this function is called in index.html.
- - Jshint warning: *Expected an assignment or function call and instead saw an expression*, line 41 >> this applies to calling a function nextQuestion() where I am calling for a new question - this warning is not valid as I'm simply calling a function nextQuestion() in my startQuiz() function.
+    - I had to select 'New JavaScript features (ES6)' in JShint.com in 'Configure' as I am using const and let variables and arrow function syntax which are available in ES6 or Mozilla JS extension.
+    - Function hideRules(), line 26 is marked as *unused variable* in jshint report, however this function is called in index.html.
+    - Jshint warning: *Expected an assignment or function call and instead saw an expression*, line 41 >> this applies to calling a function nextQuestion() where I am calling for a new question - this warning is not valid as I'm simply calling a function nextQuestion() in my startQuiz() function.
     
     ![JShint Tool](assets/wireframes/JShint_report.JPG)
 
@@ -113,12 +113,13 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 - **CONTENT**
     - My source for questions and correct answers was [Best Life](https://bestlifeonline.com/genius-trivia-questions/).
-    - The icons in the rules' container and at the end of the game were taken from [Font Awesome](https://fontawesome.com/)
+    - The icons in the rules' container and at the end of the  game were taken from [Font Awesome](https://fontawesome.com/)
     - Font is sourced from [Google Fonts](https://fonts.google.com/). I chose IM Fell Double Pica SC specifically to attract users and grab their attention. It also compliments the overall look of the quiz styling.  
 
 - **CODE**
     - As mentioned in comments in my script.js, I have used the walk-through Love Maths project as my anchor point, and [Site Point](https://www.sitepoint.com/simple-javascript-quiz/) to guide me through the project.
-    - I took an inspiration from [CodingNepal - JS](https://youtu.be/WUBhpSRS_fk)/[CodingNepal - HTML/CSS](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/) for the look and from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=979s) for the functionality.
+    - I took an inspiration from [CodingNepal - JS](https://youtu.be/WUBhpSRS_fk) / [CodingNepal - HTML/CSS](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/) for the look and from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=979s) for the functionality.
 
 - **MEDIA**
     - Background image was sourced from Pexels and it belongs to [Felix Mittermeier](https://www.pexels.com/photo/galaxy-1146134/).
+    - Favicon images was sourced from [Clipart World](https://clipart.world/brain-clipart/black-and-white-brain-clipart/) which is free to download and use for websites/blogs, art projects, school assignment, business presentations, sharing on social networks, or any personal purposes.
