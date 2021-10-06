@@ -1,7 +1,8 @@
 /** This JS script was created with the help from 
  * the walk through Love Maths project 
- * and using https://www.sitepoint.com/simple-javascript-quiz/ 
- * and https://www.codingnepalweb.com/quiz-app-with-timer-javascript/
+ * and using https://www.sitepoint.com/simple-javascript-quiz/,
+ * https://www.codingnepalweb.com/quiz-app-with-timer-javascript/
+ * and https://www.youtube.com/watch?v=riDzcEQbX6k&t=979s
  */
 
 const startButton = document.getElementById('play-btn');
@@ -21,33 +22,33 @@ nextButton.addEventListener('click', () => {
     nextQuestion();
 });
 
+// This function is used by index.html to hide rules of the quiz after user clicks on play button
 function hideRules() {
-    document.getElementById("rules-container").style.display = "none"; // used by index.html to hide rules of the quiz after user clicks on play button
+    document.getElementById("rules-container").style.display = "none"; 
 }
 
 // Starts the quiz
 function startQuiz() {
-    console.log(startButton.innerHTML)
     if (startButton.innerHTML == 'Play again!') {
         window.location.reload();
     } else {
         startButton.classList.add('hide'); // hides play button
         mixQuestions = questions;
         questions.sort();
-        console.log(questions.length);
         mixQuestions = questions.sort(() => Math.random() - 0.5), // this mixes questions
             currentQuestionIndex = 0,
             questionBox.classList.remove('hide'), // questions will appear 
             nextQuestion(); // calling next question
         mixQuestions.splice(5, 15); // This selects 5 random questions each time the user plays the quiz. Used code from w3schools.com
     }
-};
+}
 
 function nextQuestion() {
     clearConditions(); // resets everything back to a default setting, i.e. no correct/incorrect background, next question button disappears
-    showQuestion(mixQuestions[currentQuestionIndex]);
+    showQuestion(mixQuestions[currentQuestionIndex]); 
 }
 
+// This function shows a question's and options'
 function showQuestion(question) {
     questionSection.innerHTML = question.question;
     let counter = 1;
@@ -74,7 +75,12 @@ function clearConditions() {
     }
 }
 
-// Listens for a selected option
+/** This function's code is from Web Dev Simplified
+ * (https://www.youtube.com/watch?v=riDzcEQbX6k&t=979s).
+ * I have edited it to suit my needs and functionality.
+ */
+
+// This functions enables selecting an option
 function selectOption(e) {
     const clickedButton = e.target;
     const correct = clickedButton.dataset.correct;
@@ -109,13 +115,14 @@ function setCorrectnessClass(element, correct) {
     }
 }
 
-// Hides the colored background
+// Removes the colored background of selected options
 function clearCorrectnessClass(element) {
     element.classList.remove('correct');
     element.classList.remove('incorrect');
 }
 
 
+//This holds all the date for questions and options for the quiz, including the correct answer
 let questions = [
 
     {

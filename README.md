@@ -36,7 +36,7 @@ The objective of this project is to create a simple and easy to navigate quiz wi
 
 - ### **QUIZ PAGE - CORRECT/INCORRECT OPTION**
     - When an answer is selected, the background of the buttons will turn light green/light red according to being correct/incorrect.
-    - User can see which answer he selected as the font will change to italic and border will increase to 5px.
+    - User can see which answer he selected as the font will change to italic and the border will increase to 5px.
     - Next Question button will appear and again it will turn dark blue with text to bold white when you hover over it.
 
 ![Quiz game page with correct/incorrect answer](assets/wireframes/wireframe_game_correct_incorrect.JPG)
@@ -48,14 +48,14 @@ The objective of this project is to create a simple and easy to navigate quiz wi
 
 ## **FUTURE DEVELOPMENT**
 
-I would like to add pop-up modals with interesting facts about correct answers. I would also like to add a question counter and a timer.
+I would like to add pop-up modals with interesting facts about correct answers. I would also like to add a question counter, score, and timer.
 I will also add new questions to keep the content interesting and educational for users. 
 
 ## **TESTING**
 
 Here are my [Balsamiq wireframes](assets/wireframes/Balsamiq_wireframe.JPG). 
 
-I kept the styling of the quiz to a minimum to make it accessible and easy to navigate through on every device without the need for media queries. I set a simple background image with a backup background color of black for a good contrast in case the image doesn't load up. The site consists only one page and is responsive.s
+I kept the styling of the quiz to a minimum to make it accessible and easy to navigate through on every device without the need for media queries. I set a simple background image with a backup background color of black for a good contrast in case the image doesn't load up. The site consists of only one page and is responsive.
 
 I tested the quiz in Chrome Developer Tools using responsive design as well as all of the available device types listed. 
 
@@ -71,13 +71,11 @@ I tested the quiz on an iPad and iPhone 8, in Chrome and Microsoft Edge on my de
     ![Jigsaw Validator](assets/wireframes/Jigsaw_CSS_Validator_Results.JPG)
 
 -   **JSHINT** (1 warning and 1 unused variable found)
- - I had to select 'New JavaScript features (ES6)' in JShint.com in configuration as I am using const and let variables and arrow function syntax which are available in ES6 or Mozilla JS extension.
- - Function hideRules() in script.js, line 23 is marked as unused variable in jshint report, however this function is called in index.html.
- - Jshint warning: jscript.js, line 34: Expected an assignment or function call and instead saw an expression >> this applies to calling a function nextQuestion() where I am calling for a new question - this warning is not valid as I'm simply calling a function nextQuestion() in my startQuiz() function.
+ - I had to select 'New JavaScript features (ES6)' in JShint.com in 'Configure' as I am using const and let variables and arrow function syntax which are available in ES6 or Mozilla JS extension.
+ - Function hideRules(), line 26 is marked as *unused variable* in jshint report, however this function is called in index.html.
+ - Jshint warning: *Expected an assignment or function call and instead saw an expression*, line 41 >> this applies to calling a function nextQuestion() where I am calling for a new question - this warning is not valid as I'm simply calling a function nextQuestion() in my startQuiz() function.
     
     ![JShint Tool](assets/wireframes/JShint_report.JPG)
-
-
 
 ### **ACCESSIBILITY**
 
@@ -95,9 +93,12 @@ I checked that the chosen colors and fonts are easy to read. The quiz page has p
 
 
 ## **BUGS**
--   I created a function for users to be taken to an end screen after they answer the last question. However once they clicked on the answer, it would take them straightaway to the end screen without the possibility of seeing if they answered correctly or not. This bug got fixed once I added the setTimeout() method so it delays the screen by couple of seconds as per my mentor's advice. 
+-   I created a function for users to be taken to an end screen after they answer the last question. However once they clicked on the answer, it would take them straight to the end screen without the possibility of seeing if they answered correctly or not. This bug got fixed once I added the setTimeout() method so it delays the screen by a couple of seconds as per my mentor's advice. 
 
 ## **UNFIXED BUGS**
+-   There is a bug in the option selection process as users can click on all three options. Although it counts only the first selection as valid, it is a feature I would like to fix in the future as I want to add a score counter. I just haven't figured out how to fix this right now. 
+
+![Unfixed bug](assets/wireframes/unfixed_bug_selection.JPG)
 
 ## **DEPLOYMENT**
 
