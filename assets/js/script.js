@@ -48,6 +48,10 @@ function nextQuestion() {
     showQuestion(mixQuestions[currentQuestionIndex]); 
 }
 
+/** This function's code is from Web Dev Simplified
+ * (https://www.youtube.com/watch?v=riDzcEQbX6k&t=979s).
+ * I have edited it to suit my needs and functionality.
+ */
 // This function shows a question's and options'
 function showQuestion(question) {
     questionSection.innerHTML = question.question;

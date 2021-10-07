@@ -118,7 +118,8 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 - **CODE**
     - As mentioned in comments in my script.js, I have used the walk-through Love Maths project as my anchor point, and [Site Point](https://www.sitepoint.com/simple-javascript-quiz/) to guide me through the project.
-    - I took an inspiration from [CodingNepal - JS](https://youtu.be/WUBhpSRS_fk) / [CodingNepal - HTML/CSS](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/) for the look and from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=979s) for the functionality. 
+    - I took an inspiration from [CodingNepal - JS](https://youtu.be/WUBhpSRS_fk) / [CodingNepal - HTML/CSS](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/) for the look and I used some code from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=979s) which is marked in script.js and edited to suit my needs and functionality.
+
 
 - **MEDIA**
     - Background image was sourced from Pexels and it belongs to [Felix Mittermeier](https://www.pexels.com/photo/galaxy-1146134/).
