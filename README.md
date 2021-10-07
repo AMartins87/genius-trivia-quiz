@@ -2,9 +2,9 @@
 
 You can see the live site [here](https://amartins87.github.io/genius-trivia-quiz/).
 
-The purpose of Genius Trivia Quiz is to test user's general knowledge through a variety of advanced questions. The quiz is suitable for all those who would like to learn new interesting facts. 
+The purpose of Genius Trivia Quiz is to test users' general knowledge through a variety of advanced questions. The quiz is suitable for all those who would like to learn new interesting facts. 
 
-The objective of this project is to create a simple and easy to navigate quiz without the need to register.
+The objective of this project is to create a simple and easy-to-navigate quiz without the need to register.
 
 ![Mock up image](assets/wireframes/Mock_up_MS2.JPG)
 
@@ -13,7 +13,7 @@ The objective of this project is to create a simple and easy to navigate quiz wi
 ## **FEATURES**
 
 - ### **START QUIZ PAGE IMAGE**
-    - The main page has a box with rules of the quiz and a play button which will turn dark blue with text to bold white when you hover over it.
+    - The main page has a box with rules of the quiz and a play button that will change the background color to a shade of dark blue color and the text will become bold white when hovered over.
 
 ![Home page image](assets/wireframes/wireframe_main_page.JPG)
 
@@ -24,8 +24,8 @@ The objective of this project is to create a simple and easy to navigate quiz wi
 
 - ### **QUIZ PAGE - START**
 
-    - Shows questions with three possible options on display
-    - Next Questions button is not visible before you select your answer
+    - Shows questions with three possible options on display.
+    - 'Next Question' button is not visible before an answer is selected.
 
 ![Quiz game page](assets/wireframes/wireframe_game.JPG)
 
@@ -36,24 +36,24 @@ The objective of this project is to create a simple and easy to navigate quiz wi
 
 - ### **QUIZ PAGE - CORRECT/INCORRECT OPTION**
     - When an answer is selected, the background of the buttons will turn light green/light red according to being correct/incorrect.
-    - User can see which answer he selected as the font will change to italic and the border will increase to 5px.
-    - Next Question button will appear and same hover styling applies for the Next Question button.
+    - Users can see which answer they selected as the font will change to italic and the border will increase to 5px.
+    - 'Next Question' button will appear and the same hover styling applies to it.
 
 ![Quiz game page with correct/incorrect answer](assets/wireframes/wireframe_game_correct_incorrect.JPG)
 
 - ### **QUIZ PAGE - END SCREEN**
-    - The screen shows the text 'Finished!' and 'Play again!' button which will turn dark blue with text to bold white when you hover over it. When user clicks on 'Play again!' button it will take them back to start quiz screen with rules on display and play button.
+    - The screen shows the text 'Finished!' with meteor icons on both sides of it, and a 'Play again!' button which will change the background color to a shade of dark blue color and the text will become bold white when hovered over. When a user clicks on the 'Play again!' button it will take them back to the start quiz screen with rules on display and a play button.
 
 ![End of game page](assets/wireframes/wireframe_end_screen_w_hover.JPG)
 
 ## **FUTURE DEVELOPMENT**
 
 I would like to add pop-up modals with interesting facts about correct answers. I would also like to add a question counter, score, and timer.
-I will also add new questions to keep the content interesting and educational for users. 
+I will keep adding new questions to keep the content interesting and educational for users. 
 
 ## **TESTING**
 
-Here are my [Balsamiq wireframes](assets/wireframes/Balsamiq_wireframe.JPG). 
+Here are my [Balsamiq wireframes](assets/wireframes/Balsamiq_wireframe.JPG). I didn't implement the question/score counting as I have experienced functionality difficulties. I have found a tutorial with code I could have used but I decided not as I want to find the solution myself so I can understand the JavaScript functionality better.
 
 I kept the styling of the quiz to a minimum to make it accessible and easy to navigate through on every device without the need for media queries. I set a simple background image with a backup background color of black for a good contrast in case the image doesn't load up. The site consists of only one page and is responsive.
 
@@ -71,7 +71,7 @@ I tested the quiz on an iPad and iPhone 8, in Chrome and Microsoft Edge on my de
     ![Jigsaw Validator](assets/wireframes/Jigsaw_CSS_Validator_Results.JPG)
 
 -   **JSHINT** (1 warning and 1 unused variable found)
-    - I had to select 'New JavaScript features (ES6)' in JShint.com in 'Configure' as I am using const and let variables and arrow function syntax which are available in ES6 or Mozilla JS extension.
+    - I had to select 'New JavaScript features (ES6)' in JShint.com in 'Configure' as I am using **const** and **let** variables and **arrow function syntax** which are available in ES6 or Mozilla JS extension.
     - Function hideRules(), line 26 is marked as *unused variable* in jshint report, however this function is called in index.html.
     - Jshint warning: *Expected an assignment or function call and instead saw an expression*, line 41 >> this applies to calling a function nextQuestion() where I am calling for a new question - this warning is not valid as I'm simply calling a function nextQuestion() in my startQuiz() function.
     
@@ -93,10 +93,10 @@ I checked that the chosen colors and fonts are easy to read. The quiz page has p
 
 
 ## **BUGS**
--   I created a function for users to be taken to an end screen after they answer the last question. However once they clicked on the answer, it would take them straight to the end screen without the possibility of seeing if they answered correctly or not. This bug got fixed once I added the setTimeout() method so it delays the screen by a couple of seconds as per my mentor's advice. 
+-   I created a function for users to be taken to an end screen after they answer the last question. However once they clicked on the answer, it would take them straight to the end screen without a possibility of seeing if they answered correctly or not. This bug got fixed once I added the setTimeout() method so it delays the screen by a couple of seconds as per my mentor's advice. 
 
 ## **UNFIXED BUGS**
--   There is a bug in the option selection process as users can click on all three options. Although it counts only the first selection as valid, it is a feature I would like to fix in the future as I want to add a score counter. I just haven't figured out how to fix this right now. 
+-   There is a bug in the option selection process as users can click on all three options. Although it counts only the first selection as valid, it is a feature I would like to fix in a near future. I just haven't figured out how to fix this right now. 
 
 ![Unfixed bug](assets/wireframes/unfixed_bug_selection.JPG)
 
@@ -118,8 +118,8 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 - **CODE**
     - As mentioned in comments in my script.js, I have used the walk-through Love Maths project as my anchor point, and [Site Point](https://www.sitepoint.com/simple-javascript-quiz/) to guide me through the project.
-    - I took an inspiration from [CodingNepal - JS](https://youtu.be/WUBhpSRS_fk) / [CodingNepal - HTML/CSS](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/) for the look and from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=979s) for the functionality.
+    - I took an inspiration from [CodingNepal - JS](https://youtu.be/WUBhpSRS_fk) / [CodingNepal - HTML/CSS](https://www.codingnepalweb.com/quiz-app-with-timer-javascript/) for the look and from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&t=979s) for the functionality. 
 
 - **MEDIA**
     - Background image was sourced from Pexels and it belongs to [Felix Mittermeier](https://www.pexels.com/photo/galaxy-1146134/).
-    - Favicon images was sourced from [Clipart World](https://clipart.world/brain-clipart/black-and-white-brain-clipart/) which is free to download and use for websites/blogs, art projects, school assignment, business presentations, sharing on social networks, or any personal purposes.
+    - Favicon images were sourced from [Clipart World](https://clipart.world/brain-clipart/black-and-white-brain-clipart/) which is free to download and use for websites/blogs, art projects, school assignments, business presentations, sharing on social networks, or any personal purposes.
